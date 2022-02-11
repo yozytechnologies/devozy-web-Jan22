@@ -1,4 +1,7 @@
 @charset "utf-8";
+.align-left{
+  text-align: left;
+}
 /** 
 * 
 * -----------------------------------------------------------------------------
@@ -58,30 +61,59 @@
 /* P  */
 
 /* start templatemo features */
+
 .features
 {
+  font-family: 'Prompt', sans-serif;
 	background: #ffffff;
 	border-bottom: 1px solid #ffffff;
 	padding: 60px 0 60px 0;
 }
 .features h2
 {
+  font-family: 'Prompt', sans-serif;
 	font-weight: 400;
 	padding-bottom: 20px;
 }
 .features h3
 {
-  font-size: 23px;
-	font-weight: 500;
+  text-align: center;
+  font-family: 'Prompt', sans-serif;
+  font-size: 20px;
+	font-weight: 600;
 	padding-bottom: 6px;
 }
 .features p
 {
+  font-family: 'Prompt', sans-serif;
+  text-align: left ;
   font-size: 16px;
-	font-weight: 400;
+	font-weight: 500;
 	padding-bottom: 6px;
 }
+.text-left{
+  text-align: left;
+}
 .features .fa
+{
+  
+	background-image: linear-gradient(90deg, #6e71db 41%, #9c9ff9 100%);
+	border-radius: 50%;
+	color: #FFF;
+	font-size: 28px;
+	width: 80px;
+	height: 80px;
+	line-height: 80px;
+	text-align: center;
+	margin-top: 10px;
+	margin-bottom: 20px;
+	-webkit-transition: all 0.4s ease;
+  
+	transition: all 0.4s ease;
+
+}
+/* old */
+/* .features .fa
 {
 	background-image: linear-gradient(90deg, #6e71db 41%, #9c9ff9 100%);
 	border-radius: 50%;
@@ -94,9 +126,10 @@
 	margin-top: 30px;
 	margin-bottom: 10px;
 	-webkit-transition: all 0.4s ease;
+  
 	transition: all 0.4s ease;
 
-}
+} */
 .features .fa:hover
 {
 	background: #303030;
@@ -149,7 +182,10 @@
     left: 60px; /*position where enlarged image should offset horizontally */
     
     }
-	
+.tag-line	h5{
+  font-family: 'Prompt', sans-serif;
+  font-weight: 500;
+}
 .Livviche{
    font-family: 'Prompt', sans-serif;
 }
@@ -268,26 +304,32 @@ h6 {
   
 }
 h1 {
+  font-family: 'Prompt', sans-serif;
   font-size: 70px;
   font-weight: 700;
 }
 h2 {
+  font-family: 'Prompt', sans-serif;
   font-size: 36px;
   font-weight: 700;
 }
 h3 {
+  font-family: 'Prompt', sans-serif;
   font-size: 28px;
   font-weight: 700;
 }
 h4 {
+  font-family: 'Prompt', sans-serif;
   font-size: 24px;
   font-weight: 700;
 }
 h5 {
+  font-family: 'Prompt', sans-serif;
   font-size: 18px;
-  font-weight: 700;
+  font-weight: 500;
 }
 h6 {
+  font-family: 'Prompt', sans-serif;
   font-size: 16px;
   font-weight: 700;
 }
@@ -1959,6 +2001,7 @@ blockquote cite:before {
 }
 
 .sec-title .desc {
+  font-family: 'Prompt', sans-serif;
   font-size: 18px;
   font-weight: 500;
   margin: 0;
@@ -1975,6 +2018,7 @@ blockquote cite:before {
 .sec-title2 {
   position: relative;
 }
+
 .sec-title2 .sub-text {
   margin: 0 0 10px;
   display: block;
@@ -2057,7 +2101,7 @@ blockquote cite:before {
 .sec-title2 .heading-line {
   position: relative;
   background-color: #03228F;
-  height: 5px;
+  height: 6px;
   width: 90px;
   border-radius: 30px;
   margin: 20px auto;
@@ -2100,6 +2144,7 @@ blockquote cite:before {
   color: #fff;
 }
 .sec-title2 .desc.desc2 {
+  
   max-width: 700px;
   margin: 0;
 }
@@ -2239,9 +2284,10 @@ blockquote cite:before {
   margin: 0 auto;
 }
 .sec-title5 .desc2 {
-  font-size: 15px;
+  font-family: 'Prompt', sans-serif;
+  font-size: 17px;
   line-height: 26px;
-  font-weight: 500;
+  font-weight: 600;
   color: #454545;
   max-width: 507px;
   margin: 0;
@@ -6314,7 +6360,7 @@ body .search-modal .close:hover {
 }
 .rs-services.style3 .services-item .services-content .services-text .title {
   font-size: 20px;
-  font-weight: 500;
+  font-weight: 600;
   line-height: 30px;
   margin-bottom: 13px;
 }
@@ -7016,6 +7062,7 @@ body .search-modal .close:hover {
   text-decoration: underline;
 }
 .rs-process.style6 .tab-area .nav li .tab-item p {
+  font-family: 'Prompt', sans-serif;
   font-size: 16px;
   line-height: 26px;
   font-weight: 500;
@@ -7544,66 +7591,70 @@ color: #101010;
 /* } */
 #slider2
 {
+  
+  outline-color: #000;
   margin-left: 200px;
   display: none;
   width: 800px;
-  height: 600px;  
+  height: 600px;  cursor: pointer;
+  
 }
 #slider3
 {
+  
   margin-left: 200px;
   display: none;
   width: 800px;
-  height: 600px;  
+  height: 600px;  cursor: pointer;
 }
 #slider4
 {
   margin-left: 200px;
   display: none;
   width: 800px;
-  height: 600px;  
+  height: 600px;  cursor: pointer;
 }
 #slider5
 {
   margin-left: 200px;
   display: none;
   width: 800px;
-  height: 600px;  
+  height: 600px;  cursor: pointer;
 }
 #slider6
 {
   margin-left: 200px;
   display: none;
   width: 800px;
-  height: 600px;  
+  height: 600px;  cursor: pointer;
 }
 #slider7
 {
   margin-left: 200px;
   display: none;
   width: 800px;
-  height: 600px;  
+  height: 600px;  cursor: pointer;
 }
 #slider8
 {
   margin-left: 200px;
   display: none;
   width: 800px;
-  height: 600px;  
+  height: 600px;  cursor: pointer;
 }
 #slider9
 {
   margin-left: 200px;
   display: none;
   width: 800px;
-  height: 600px;  
+  height: 600px;  cursor: pointer;
 }
 #slider10
 {
   margin-left: 200px;
   display: none;
   width: 800px;
-  height: 600px;  
+  height: 600px;  cursor: pointer;
 }
 .rs-project.style2 .project-item .project-content {
   position: absolute;
@@ -11084,21 +11135,20 @@ width:100px;
   z-index: 999999;
 }
 .loader .loader-container {
-  width: 400px;
-  height: 400px;
-  background-color: #106eea;  
+  width: 40px;
+  height: 40px;
+  background-color: #0024ba;  
+  /* 106eea */
   
-  /* background-image: url(img/DEVOZY.png); */
-  background-image: url(img/yozy.png);
   border-radius: 100%;
   -webkit-animation: sk-scaleout 1s infinite ease-in-out;
   animation: sk-scaleout 1s infinite ease-in-out;
   position: absolute;
-  top: 30%;
-  left: 42%;
+  top: 50%;
+  left: 50%;
   transform: translate(-50%, -50%);
 }
-.loader-img {
+/* .loader-img {
   display: block;
   position: relative;
   left: 50%;
@@ -11109,12 +11159,13 @@ width:100px;
   z-index: 1001;  
   background-image: url(img/yozy.png);
 
-  /* background-image: url(assets/images/logo.png); */
+  background-image: url(assets/images/logo.png);
   background-repeat: no-repeat;
   background-size: 50%;
   background-position: center;
+  z-index: 10;
   z-index: 1020;
-}
+} */
 .loader.orange-loader .loader-container {
   background: #ff7045;
 }
@@ -11302,7 +11353,7 @@ width:100px;
 table {
   background-color: transparent;
   border-collapse: collapse;
-  border-spacing: 0;
+  border-spacing: 0;  
   width: 100%; }
 
 caption {
@@ -11312,6 +11363,7 @@ caption {
   text-align: left; }
 
 th {
+  
   text-align: left; }
 
 table {
@@ -11320,7 +11372,12 @@ table {
   margin-bottom: 20px;
   align-items: center;
   border: 1px solid #ddd; }
-
+.tdfont th{
+  font-family: 'Prompt', sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  border: 1px solid #ddd;
+}
 table > thead > tr > th,
 table > tbody > tr > th,
 table > tfoot > tr > th,
@@ -11338,13 +11395,32 @@ table > tfoot > tr > td {
   table > thead > tr > td.mystyle,
   table > tbody > tr > td.mystyle,
   table > tfoot > tr > td.mystyle {
+    font-family: 'Prompt', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
     text-align: center;
     padding: 14px;
     line-height: 1.42857143;
     vertical-align: top;
     border-top: 0.5px solid #ddd; }
+    .mytdttdbor{
+      border-top: 0.5px solid #ddd;
+    }
 table, th, td {
+  
   border: 0px solid #ddd; }
+ 
+.comparison td{
+  text-align: justify;
+  font-family: 'Prompt', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+}
+   .myown td{
+    font-family: 'Prompt', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    border: 1px solid #ddd; }
 
 table > thead > tr > th {
   vertical-align: bottom;
@@ -11417,6 +11493,7 @@ table > tfoot > tr.success > th {
   table > tbody > tr.black-t > th,
   table > tfoot > tr.black-t > th {
     /* background-color: #d4e5ff; */
+    
     background-color: #f2f2f2;
 
    }
