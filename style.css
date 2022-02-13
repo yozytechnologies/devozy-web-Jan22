@@ -2370,7 +2370,20 @@ blockquote cite:before {
   /* 454545 */
   color: #000000;
 }
+#div1 {
+  font-size:18px;
+  color: rgb(164, 96, 228);
+}
 .check-square li:before {
+  position: absolute;
+  left: 0;
+  z-index: 0;
+  content: "\f058";
+  font-weight: 500;
+  font-family: fontawesome;
+  color: #787cf2;
+}
+.check-ta{
   position: absolute;
   left: 0;
   z-index: 0;
