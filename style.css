@@ -64,7 +64,10 @@
 /* P  */
 
 /* start templatemo features */
-
+#footer_image{
+height: 80% !important;
+width: 60% !important;
+}
 .features
 {
   font-family: 'Prompt', sans-serif;
@@ -344,6 +347,9 @@ h6 {
 }
 .pr-220 {
   padding-right: 220px;
+}
+#introImage{
+  height: 450px !important;
 }
 .offwrap {
   cursor: url(assets/images/close.png), auto;
@@ -636,7 +642,7 @@ ul {
   background-size: cover;
 }
 .bg25 {
-  background: url(assets/images/bg/skill-bg16.jpg);
+  background-color:#ffffff ;
   background-position: center left;
   background-repeat: no-repeat;
   background-size: cover;
@@ -3751,10 +3757,11 @@ body .search-modal .close:hover {
 .rs-about.home14-about-style .about-bottom-section .addon-services {
   margin: -88px 26px 0px -20px;
   padding: 15px 20px 15px 20px;
-  background-image: linear-gradient(120deg, #1642fd 0%, #b12bf3 100%);
+  background-color: #ffffff;
   border-radius: 10px 10px 10px 10px;
   display: flex;
   align-items: center;
+  border: 1px solid lightskyblue;
 }
 .rs-about.home14-about-style .about-bottom-section .addon-services .icon-images img {
   max-width: unset;
@@ -3770,6 +3777,7 @@ body .search-modal .close:hover {
   line-height: 1.4em;
   color: #ffffff;
   margin: 0 0 10px;
+  justify-content: center !important;
 }
 .rs-about .software-img img {
   max-width: 600px;
