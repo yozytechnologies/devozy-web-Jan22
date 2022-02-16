@@ -5,6 +5,9 @@
 .text-justify{
   text-align: justify;
 }
+.navy-blue{
+  color: #000080;
+}
 /** 
 * 
 * -----------------------------------------------------------------------------
@@ -2369,6 +2372,10 @@ blockquote cite:before {
   letter-spacing: 2px;
   margin-bottom: 20px;
 }
+.title2{
+  font-size: 38px;
+  color: #FFF;
+}
 .check-square li {
   position: relative;
   padding-left: 17px;
@@ -2412,7 +2419,7 @@ blockquote cite:before {
 }
 .full-width-header .rs-header .topbar-area {
   padding-top: 20px;
-  padding-bottom: 10px;
+  padding-bottom: 0px;
 }
 .full-width-header .rs-header .topbar-area .rs-contact-info .contact-part {
   display: inline-block;
@@ -4146,7 +4153,12 @@ body .search-modal .close:hover {
   margin-right: 0;
 }
 .rs-banner.style9 {
-  background: url(assets/images/banner/style4/banner-bg.png);
+  
+  background: url(assets/images/banner/style4/banner-bg1.png);
+  
+  /* background: url(assets/images/banner/style4/banner-bg12.jpg); */
+  /* background: url(assets/images/banner/style4/YOZY-BANNER-3.png); */
+  
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -4154,7 +4166,11 @@ body .search-modal .close:hover {
   z-index: 1;
 }
 .rs-banner.style9 .banner-content {
+
   padding: 300px 0 235px;
+  /* padding: 500px 0 235px; */
+  
+
 }
 .rs-banner.style9 .banner-content .sub-text {
   font-size: 18px;
@@ -10595,6 +10611,7 @@ color: #101010;
   padding: 92px 0 65px;
 }
 .rs-footer .footer-top .footer-logo img {
+  
   height: 40px;
 }
 .rs-footer .footer-top .widget-title {
@@ -10811,6 +10828,7 @@ color: #101010;
   padding: 92px 0 65px;
 }
 .rs-footer.style2 .footer-top .footer-logo img {
+  
   height: 40px;
 }
 .rs-footer.style2 .footer-top .widget-title {
