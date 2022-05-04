@@ -77,6 +77,37 @@
   width: 60% !important;
 }
 
+.subscribe{
+  background-color: #095fd0;
+  padding: 5px !important;
+  border-radius: 5px ;
+  color: white !important;
+  margin-bottom: 20px !important;
+
+  
+animation: scalexxyy 1s ease-in-out infinite alternate ;
+
+ 
+}
+.subscribe:hover{
+  background-color: #2e7ce2;
+  color: white;
+}
+.slideani{
+  
+  animation: slider 4s linear 1 ;
+
+}
+
+
+@keyframes scalexxyy {
+  from {
+    transform: scale(.9);
+  }
+  to {
+    transform: scale(1);
+  }
+}
 .features {
   font-family: 'Prompt', sans-serif;
   background: #ffffff;
@@ -3452,7 +3483,7 @@ blockquote cite:before {
 
 .full-width-header .rs-header.style3 .menu-area {
   background: transparent;
-  padding: 13px 0;
+  /* padding: 13px 0; */
 }
 
 .full-width-header .rs-header.style3 .menu-area .logo-part a .sticky-logo {
@@ -13190,10 +13221,10 @@ ul#menu12 li {
   background: #ff7045;
 }
 
-#scrollUp.purple-color i {
+/* #scrollUp.purple-color i {
   color: white;
   background: black;
-}
+} */
 
 .btn_wrap {
   position: relative;
@@ -13208,24 +13239,32 @@ ul#menu12 li {
   align-items: center;
   overflow: hidden;
   cursor: pointer;
-  width: 50px;
+  width: 200px;
+ 
   height: 50px;
-  background-color: black;
+  background: #498c45;
   border-radius: 80px;
   padding: 0 18px;
   will-change: transform;
   -webkit-transition: all .2s ease-in-out;
   transition: all .2s ease-in-out;
+  background-color: #0024ba;
+  /* background-color: #0024ba; */
+  color: #F1F5FB;
+  background: rgb(47,32,173);
+  background: linear-gradient(145deg, rgba(47,32,173,0.6731734930300245) 0%, rgba(226,75,156,0.7263947815454307) 100%);
+  opacity: 1;
+  
 }
 
-.btn_wrap:hover {
-  /* transition-delay: .4s; */
+/* .btn_wrap:hover {
+  transition-delay: .4s;
   color: #F1F5FB;
   width: 240px;
   height: 52px;
   -webkit-transform: scale(1.1);
   transform: scale(1.1)
-}
+} */
 
 .span1 {
   position: absolute;
@@ -13239,7 +13278,7 @@ ul#menu12 li {
   line-height: 70px;
   letter-spacing: 2px;
   color: #EEEEED;
-  background-color: black;
+  /* background-color: black; */
   padding: 0 18px;
   -webkit-transition: all 1.2s ease;
   transition: all 1.2s ease;
@@ -13279,12 +13318,12 @@ ul#menu12 li {
   transition-delay: .4s;
 }
 
-.btn_wrap:hover span {
+/* .btn_wrap:hover span {
   -webkit-transition-delay: .25s;
   transition-delay: .25s;
   -webkit-transform: translateX(-280px);
   transform: translateX(-280px)
-}
+} */
 
 .btn_wrap:hover i {
   opacity: 1;
