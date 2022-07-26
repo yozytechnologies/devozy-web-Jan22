@@ -141,6 +141,15 @@ animation: scalexxyy 1s ease-in-out infinite alternate ;
   text-align: left;
 }
 
+.testi-item img{
+  max-width: 100%;
+  height: 70%;
+}
+
+
+
+
+
 .features .fa {
 
   background-image: linear-gradient(90deg, #6e71db 41%, #9c9ff9 100%);
@@ -628,11 +637,14 @@ ul {
 }
 
 .bg7 {
+  /* background-image: linear-gradient(250deg, #4e95ed 0%, #03228f 100%); */
+
   background: url(assets/cta-bg.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  opacity: 80%;
+
+  /* opacity: 80%; */
 }
 
 .bg8 {
@@ -651,12 +663,21 @@ ul {
   border-radius: 10px 10px 10px 10px;
 }
 
+#paraimag{
+  font-size: 1.5rem;
+  color: "red";
+}
+
 .bg10 {
-  background: url(assets/images/bg/testi-home7.jpg);
+  /* background: url(assets/cta-bg.jpg); */
+  /* background: url(assets/images/bg/testi-home7.jpg); */
+  background-image: linear-gradient(250deg, #4e95ed 0%, #03228f 100%);
+  /* background-color: #13E1AF; */
+  /* background: white; */
   background-repeat: no-repeat;
   background-position: top center;
   background-size: cover;
-  padding: 100px 90px 100px 90px;
+  padding: 10px 90px 10px 90px;
   border-radius: 5px 5px 5px 5px;
 }
 
@@ -7635,6 +7656,8 @@ ul#menu12 li {
   text-align: left;
 }
 
+
+
 .rs-services.style3 .services-item .services-icon {
   position: relative;
   transition: all .3s ease;
@@ -9148,6 +9171,9 @@ ul#menu12 li {
   border-radius: 5px;
   /* transform: scale(1.5); */
 /* } */
+/* #slidergg{
+  display: none;
+} */
 #slider2 {
 
   outline-color: #000;
@@ -11428,7 +11454,7 @@ ul#menu12 li {
 }
 
 .rs-testimonial.style4 .testi-item {
-  background-color: #FDFDFD;
+  /* background-color: #FDFDFD; */
   border-radius: 5px 5px 5px 5px;
   padding: 60px 60px 60px 60px;
 }
