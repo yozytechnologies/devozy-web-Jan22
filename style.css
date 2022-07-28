@@ -78,7 +78,8 @@
 }
 
 .subscribe{
-  background-color: #095fd0;
+  /* background-color: #095fd0; */
+  background-image: linear-gradient(180deg, #03228f 19%, #4e95ed 100%);
   padding: 5px !important;
   border-radius: 5px ;
   color: white !important;
@@ -90,7 +91,8 @@ animation: scalexxyy 1s ease-in-out infinite alternate ;
  
 }
 .subscribe:hover{
-  background-color: #2e7ce2;
+  /* background-color: #2e7ce2; */
+  background-image: linear-gradient(180deg, #03228f 19%, #4e95ed 100%);
   color: white;
 }
 .slideani{
@@ -665,9 +667,24 @@ ul {
 
 #paraimag{
   font-size: 1.5rem;
-  color: "red";
+  text-align: justify;
+  /* max-width:450px; */
+}
+#paraimag2{
+  margin-left: 2%;
+  font-size: 1.2rem;
+  text-align: justify;
+  
+}
+#main{
+  padding-bottom: 50%;
 }
 
+@media screen and (max-width: 480px) {
+  #main{
+  padding-bottom: 10%;
+  }
+}
 .bg10 {
   /* background: url(assets/cta-bg.jpg); */
   /* background: url(assets/images/bg/testi-home7.jpg); */
@@ -680,6 +697,7 @@ ul {
   padding: 10px 90px 10px 90px;
   border-radius: 5px 5px 5px 5px;
 }
+
 
 .bg11 {
   background: url(assets/images/bg/index-bg.jpg);
@@ -7647,7 +7665,7 @@ ul#menu12 li {
 
 .rs-services.style3 .services-item {
   width: auto;
-  max-height: 300px;
+  max-height: 326px;
   padding: 50px 28px 50px 28px;
   background-color: #FFFFFF;
   border-radius: 10px 10px 10px 10px;
@@ -13252,6 +13270,7 @@ ul#menu12 li {
   background: black;
 } */
 
+
 .btn_wrap {
   position: relative;
   display: -webkit-box;
@@ -13265,9 +13284,9 @@ ul#menu12 li {
   align-items: center;
   overflow: hidden;
   cursor: pointer;
-  width: 200px;
+  width: 177px;
  
-  height: 50px;
+  height: 37px;
   background: #498c45;
   border-radius: 80px;
   padding: 0 18px;
@@ -13278,7 +13297,7 @@ ul#menu12 li {
   /* background-color: #0024ba; */
   color: #F1F5FB;
   background: rgb(47,32,173);
-  background: linear-gradient(145deg, rgba(47,32,173,0.6731734930300245) 0%, rgba(226,75,156,0.7263947815454307) 100%);
+  background: linear-gradient(145deg, #1273eb 30%, #03228f  100%);
   opacity: 1;
   
 }
