@@ -90,6 +90,14 @@ animation: scalexxyy 1s ease-in-out infinite alternate ;
 
  
 }
+.testi-effects-layer{
+  align-items: center;
+ 
+}
+
+
+  
+
 .subscribe:hover{
   /* background-color: #2e7ce2; */
   background-image: linear-gradient(180deg, #03228f 19%, #4e95ed 100%);
@@ -144,8 +152,9 @@ animation: scalexxyy 1s ease-in-out infinite alternate ;
 }
 
 .testi-item img{
-  max-width: 100%;
-  height: 70%;
+  max-width: 70%;
+  height: 50%;
+
 }
 
 
@@ -671,18 +680,49 @@ ul {
   /* max-width:450px; */
 }
 #paraimag2{
-  margin-left: 2%;
-  font-size: 1.2rem;
+  /* margin-left: 2%; */
+  font-size: 1.3rem;
+  font-weight: 600;
   text-align: justify;
   
 }
 #main{
-  padding-bottom: 50%;
+  padding-bottom: 5%;
 }
 
 @media screen and (max-width: 480px) {
   #main{
   padding-bottom: 10%;
+  }
+}
+@media screen and (max-width: 786px) {
+  #main{
+  padding-bottom: 5%;
+  }
+}
+@media screen and (max-width: 426px) {
+  #main{
+  padding-bottom: 5%;
+  }
+  #knowbtn{
+   /* color: red; */
+   padding-top: 2px;
+   padding-bottom: 2px;
+ 
+   font-size: 10px;
+   height: 30px;
+  
+  }
+  #paraimag{
+    font-size: 1.4rem;
+    text-align: justify;
+    /* max-width:450px; */
+  }
+  #paraimag2{
+    /* margin-left: 2%; */
+    font-size: 1rem;
+    text-align: justify;
+    
   }
 }
 .bg10 {

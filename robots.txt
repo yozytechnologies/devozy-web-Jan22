@@ -1,0 +1,3 @@
+User-agent: *
+Disallow: 
+Sitemap: https://devozy.yozytech.com/sitemap.xml
