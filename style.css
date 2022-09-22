@@ -11,6 +11,14 @@
 .navy-blue {
   color: #000080;
 }
+
+.link-mobile{
+  transition: all 150ms ease-in;
+}
+.link-mobile:hover{
+transform: scale(1.1);
+  color: #03228f !important;
+}
 /* @media screen and (max-width: 980px) {
   .subscribe{
     font-size: .3rem;
@@ -710,11 +718,23 @@ ul {
   #main{
   padding-bottom: 10%;
   }
+  .hideinmob{
+display: none;
+  }
 }
 @media screen and (max-width: 786px) {
   #main{
   padding-bottom: 5%;
   }
+  .link-mobile{
+    font-size: 12px;
+  }
+  .sslinks{
+    font-size: 12px;
+  }
+  
+
+
 }
 @media screen and (max-width: 426px) {
   #main{
@@ -14409,7 +14429,7 @@ table>tfoot>tr.danger>th {
   animation-name: fadeInRight;
 }
 
-@keyframes {
+@keyframes yozy{
   0% {
     opacity: 0;
     transform: translate3d(100%, 0, 0);
@@ -14419,5 +14439,4 @@ table>tfoot>tr.danger>th {
     opacity: 1;
     transform: none;
   }
-}
 }
