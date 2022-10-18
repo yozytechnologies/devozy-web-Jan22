@@ -106,6 +106,19 @@ animation: scalexxyy 1s ease-in-out infinite alternate ;
 
  
 }
+
+.myviedo{
+  gap: 30px;
+  flex-wrap: wrap;
+}
+@media screen and (max-width: 600px) {
+ .myoutube2,.myoutube{
+  width: 350px;
+  height: auto;
+
+ }
+
+}
 @media screen and (max-width: 545px) {
   .subscribe{
     font-size:.4rem;
