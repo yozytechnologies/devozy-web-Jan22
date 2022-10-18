@@ -114,7 +114,7 @@ animation: scalexxyy 1s ease-in-out infinite alternate ;
 @media screen and (max-width: 600px) {
  .myoutube2,.myoutube{
   width: 350px;
-  height: auto;
+  height: 100%;
 
  }
 
