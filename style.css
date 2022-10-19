@@ -19,6 +19,34 @@
 transform: scale(1.1);
   color: #03228f !important;
 }
+
+@media screen and (max-width: 1024px) {
+.myoutube{
+  width: 450px;
+  height: 250px;
+}
+}
+@media screen and (max-width: 768px) {
+  .myoutube {
+    width: 350px;
+    height: 200px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .myoutube {
+    width: 300px;
+    height: 200px;
+  }
+  .mybanner{
+    margin-top: 100px;
+    align-items: center;
+  }
+  .banner-img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
 /* @media screen and (max-width: 980px) {
   .subscribe{
     font-size: .3rem;
