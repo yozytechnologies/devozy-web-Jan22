@@ -19,18 +19,43 @@
 transform: scale(1.1);
   color: #03228f !important;
 }
+.probsta{
+height: 450px;
+}
+.probsta,.productintro{
+overflow: hidden;
+}
+ .probsta img {
+   transform: translateY(-180px);
+ }
+
+ .productintro img {
+   transform: translateY(-70px);
+  
+ }
+
 
 @media screen and (max-width: 1024px) {
 .myoutube{
   width: 450px;
-  height: 250px;
+  height: auto;
 }
 }
 @media screen and (max-width: 768px) {
+  .probsta {
+      height: auto;
+    }
   .myoutube {
     width: 350px;
     height: 200px;
   }
+     .probsta img {
+       transform: translateY(-50px);
+     }
+  
+     .productintro img {
+       transform: translateY(-20px);
+     }
 }
 @media screen and (max-width: 500px) {
   .myoutube {
