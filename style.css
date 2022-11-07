@@ -33,6 +33,63 @@ overflow: hidden;
    transform: translateY(-70px);
   
  }
+.twosections{
+  overflow: hidden;
+  
+}
+ .banner-img1{
+  width: 50%;
+  overflow: hidden;
+ 
+ }
+ .banner-img1 img{
+
+width:450px;
+height: 250px;
+z-index: 9;
+ 
+  
+ }
+ .bimg2{
+width: 50%;
+ }
+
+ 
+ .banner-img{
+z-index: 9;
+ }
+ /* .wavebanner{
+  background-image: url("./assets/14\ \(1\).png") !important;
+  background-repeat: no-repeat !important;
+  background-position: 100% 20% !important;
+  background-size: 30% !important;
+
+ } */
+ .waveimg{
+ position: relative;
+ margin-top: -20%;
+ margin-bottom: 16px;
+ 
+  z-index: -99;
+ }
+
+ @keyframes bigwave {
+  from{
+    background-position: 100% 20% !important;
+
+  }
+
+  to{
+        background-position: 100% 20% !important;
+  }
+  
+ }
+  
+
+ .banner-img2 {
+   width: 50%;
+
+ }
 
 
 @media screen and (max-width: 1024px) {
@@ -42,6 +99,22 @@ overflow: hidden;
 }
 }
 @media screen and (max-width: 768px) {
+  .twosections{
+    flex-direction: column;
+  }
+  .banner-img1{
+width: 100%;
+  }
+  .bimg2{
+    margin-top: 10px;
+width: 100%;
+  }
+  .waveimg{
+display: none;
+  }
+  .banner-img1 img{
+width: 350px;
+  }
   .probsta {
       height: auto;
     }
