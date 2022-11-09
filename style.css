@@ -74,7 +74,7 @@ width: 50%;
 z-index: 9;
  }
  /* .wavebanner{
-  background-image: url("./assets/14\ \(1\).png") !important;
+  background-image: url("./a") !important;
   background-repeat: no-repeat !important;
   background-position: 100% 20% !important;
   background-size: 30% !important;
@@ -83,7 +83,8 @@ z-index: 9;
  .waveimg{
  position: relative;
  margin-top: -20%;
- margin-bottom: 16px;
+ transform: translateY(-70px);
+ margin-bottom: 10px;
  
   z-index: -99;
  }
