@@ -11,12 +11,22 @@
 .navy-blue {
   color: #000080;
 }
-
+.points{
+  max-width: 600px;
+}
 .custom3 img{
-  width: 40px !important;
-  height: 40px !important;
+transform: translateY(-5px);
+margin-right: 5px;
 
 }
+.twosections{
+  justify-content: space-between;
+}
+/* .new_banner{
+  background-image: url("./assets/banner2\ \(2\).png") !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+} */
 .link-mobile{
   transition: all 150ms ease-in;
 }
