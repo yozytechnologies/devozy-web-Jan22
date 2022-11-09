@@ -12,6 +12,11 @@
   color: #000080;
 }
 
+.custom3 img{
+  width: 40px !important;
+  height: 40px !important;
+
+}
 .link-mobile{
   transition: all 150ms ease-in;
 }
