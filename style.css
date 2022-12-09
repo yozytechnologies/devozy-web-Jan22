@@ -369,8 +369,11 @@ width: 350px;
      }
 }
 @media screen and (max-width: 500px) {
+  .twosections {
+    overflow-x: hidden !important;
+  }
   .myoutube {
-    width: 300px;
+    width: 270px;
     height: 200px;
   }
   .mybanner{
