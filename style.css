@@ -3,10 +3,73 @@
 .align-left {
   text-align: left;
 }
+.price_btn{
+background: linear-gradient(170deg, #03228f 0%, #4e95ed 100%);
+border-radius: 30px 30px 30px 30px;
+  text-transform: uppercase;
+  cursor: pointer;
+  color: #fff;
+  padding: 1rem 2rem;
+ align-self: center;
+  
+
+}
+.price_btn:hover{
+ opacity: .9;
+  color: #ffff;
+
+}
+.card_price{
+  min-width: 400px;
+  display: flex;
+  flex-direction: column;
+  
+
+}
+
+.normal_card{
+transform: scale(.95);
+}
+.card_pro{
+transform: scale(1);
+background-color: #00005B;
+color: white;
+}
+.card_pro h2{
+color: #fff;
+}
+/* pricing */
+.card_price{
+  box-shadow: 0px 0px 50px 11px rgb(95 138 236 / 5%);
+/* box-shadow: 0 0 20px 0px rgb(0 36 186 / 20%); */
+padding: 1rem;
+border-radius: 16px;
+
+padding-bottom: 1.5rem;
+/* transition:all  .2s ease-in;
+  transform: scale(.95); */
+}
+.card_price h2{
+  text-align: center;
+}
+.card_price:hover{
+  
+  /* transform: scale(1); */
+}
+.custom_pricing{
+  display: flex;
+  gap: 16px;
+}
 .mycolorrr{
   background-color: #F0F8FF;
 /* background-image: linear-gradient(to top, #accbee 0%, #e7f0fd 100%);} */
 /* background-image: linear-gradient(-20deg, #b721ff 0%, #21d4fd 100%); */
+}
+.custom-logo{
+  width: 30px!important;
+}
+.custom-logo1{
+  width: 50px !important;
 }
 .text-justify {
   text-align: justify;
