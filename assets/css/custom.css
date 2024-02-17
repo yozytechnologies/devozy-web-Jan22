@@ -1,0 +1,24 @@
+.agilehero .swiper-slide {
+  height: 420px;
+}
+.agilehero2 .swiper-slide {
+  height: 400px;
+}
+/* .itsmslider .swiper-slide{
+    height: 400px;
+    } */
+.agilehero .swiper-slide img {
+  object-fit: contain !important;
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  /* Styles for screens between 320px and 767px */
+  .agilehero .swiper-slide {
+    height: 250px;
+  }
+
+  .agilehero2 .swiper-slide {
+    height: 250px;
+  }
+  /* Add more styles as needed */
+}
