@@ -22,3 +22,13 @@
   }
   /* Add more styles as needed */
 }
+.imagediv .img-fluid{
+  height:70%;
+  width: 80%;
+}
+.imagediv{
+ 
+  display: flex;
+  align-items:center;
+  justify-content: center;
+}
