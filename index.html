@@ -229,10 +229,11 @@
             <nav class="navbar navbar-expand-xl navbar-light sticky-header">
                 <div class="container d-flex align-items-center justify-content-lg-between position-relative">
                     <a href="index.html" class="navbar-brand d-flex align-items-center mb-md-0 text-decoration-none">
-                        <img src="assets/img/logos/DevozyLogo2.svg" width="160" height="36" alt="logo"
-                            class="img-fluid logo-white" />
                         <img src="assets/img/logos/DevozyLogo.svg" width="160" height="36" alt="logo"
                             class="img-fluid logo-color" />
+                        <img src="assets/img/logos/DevozyLogo2.svg" width="160" height="36" alt="logo"
+                            class="img-fluid logo-white" />
+                        
                     </a>
 
                     <a class="navbar-toggler position-absolute right-0 border-0" href="#offcanvasWithBackdrop"
@@ -306,7 +307,10 @@
                 <div class="offcanvas-header d-flex align-items-center mt-4">
                     <a href="index.html" class="d-flex align-items-center mb-md-0 text-decoration-none">
                         <img src="assets/img/logos/DevozyLogo.svg" height="63" width="113" alt="logo"
-                            class="img-fluid ps-2" />
+                            class="img-fluid ps-2 logo-color"  />
+                            <!-- <img src="assets/img/logos/DevozyLogo2.svg" width="113" height="63" alt="logo"
+                            class="img-fluid logo-white" /> -->
+                       
                     </a>
                     <button type="button" class="close-btn text-danger" data-bs-dismiss="offcanvas" aria-label="Close">
                         <i class="flaticon-cancel"></i>
@@ -359,7 +363,7 @@
                      
                     </ul>
                     <div class="action-btns mt-4 ps-3">
-                        <a href="https://web.devozy.ai/" target="_blank" class="btn btn-outline-primary me-2">Login</a>
+                        <a href="https://web.devozy.ai/" target="_blank" class="btn btn-outline-primary me-2 mb-2 ">Login</a>
                         <a href="request-demo.html" target="_blank" class="btn btn-primary">Request Free Demo</a>
                     </div>
                 </div>
@@ -2429,6 +2433,15 @@
     <script src="assets/js/vendors/aos.js"></script>
     <script src="assets/js/vendors/massonry.min.js"></script>
     <script src="assets/js/app.js"></script>
+
+   <!--make it default darkmode-->
+<script>
+    let usertheme=localStorage.getItem('theme')
+   
+    if(usertheme==null){
+        localStorage.setItem('theme', 'dark')
+    }
+</script>
     <!-- Google Tag Manager (noscript) -->
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=G-GJ5SBGF06Q" height="0" width="0"
             style="display:none;visibility:hidden"></iframe></noscript>
