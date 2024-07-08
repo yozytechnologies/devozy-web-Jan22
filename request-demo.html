@@ -54,6 +54,28 @@
 
     <!--Google reCaptcha v2-->
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+    <!-- new scc -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Include Select2 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+    <!-- Include Select2 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    <style>
+        .input-group {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1rem;
+        }
+        .input-group-prepend select {
+            width: 110px;
+        }
+        .input-group-prepend input {
+            margin-left: 2px;
+        }
+    </style>
+
+    
 </head>
 
 <body>
@@ -219,11 +241,69 @@
                                         </div>
                                     </div>
                                     <div class="col-sm-12">
-                                        <div class="input-group mb-3">
+                                        <!-- <div class="input-group mb-3">
                                             <input type="text" id="number" name="number" class="form-control"
                                                 placeholder="Phone Number" aria-label="phone number" required>
+                                        </div> -->
+                                        <div class="input-group mb-3">
+                                            <div class="input-group-prepend">
+                                                <select id="countryCode" name="countryCode" class="form-control" aria-label="Country Code" required>
+                                                    
+                                                    <option value="+91">+91 (India)</option>
+                                                    <option value="+1">+1 (USA)</option>
+                                                    <option value="+7">+7 (Russia)</option>
+                                                    <option value="+20">+20 (Egypt)</option>
+                                                    <option value="+27">+27 (South Africa)</option>
+                                                    <option value="+30">+30 (Greece)</option>
+                                                    <option value="+31">+31 (Netherlands)</option>
+                                                    <option value="+32">+32 (Belgium)</option>
+                                                    <option value="+33">+33 (France)</option>
+                                                    <option value="+34">+34 (Spain)</option>
+                                                    <option value="+36">+36 (Hungary)</option>
+                                                    <option value="+39">+39 (Italy)</option>
+                                                    <option value="+40">+40 (Romania)</option>
+                                                    <option value="+41">+41 (Switzerland)</option>
+                                                    <option value="+43">+43 (Austria)</option>
+                                                    <option value="+44">+44 (United Kingdom)</option>
+                                                    <option value="+45">+45 (Denmark)</option>
+                                                    <option value="+46">+46 (Sweden)</option>
+                                                    <option value="+47">+47 (Norway)</option>
+                                                    <option value="+48">+48 (Poland)</option>
+                                                    <option value="+49">+49 (Germany)</option>
+                                                    <option value="+51">+51 (Peru)</option>
+                                                    <option value="+52">+52 (Mexico)</option>
+                                                    <option value="+53">+53 (Cuba)</option>
+                                                    <option value="+54">+54 (Argentina)</option>
+                                                    <option value="+55">+55 (Brazil)</option>
+                                                    <option value="+56">+56 (Chile)</option>
+                                                    <option value="+57">+57 (Colombia)</option>
+                                                    <option value="+58">+58 (Venezuela)</option>
+                                                    <option value="+60">+60 (Malaysia)</option>
+                                                    <option value="+61">+61 (Australia)</option>
+                                                    <option value="+62">+62 (Indonesia)</option>
+                                                    <option value="+63">+63 (Philippines)</option>
+                                                    <option value="+64">+64 (New Zealand)</option>
+                                                    <option value="+65">+65 (Singapore)</option>
+                                                    <option value="+66">+66 (Thailand)</option>
+                                                    <option value="+81">+81 (Japan)</option>
+                                                    <option value="+82">+82 (South Korea)</option>
+                                                    <option value="+84">+84 (Vietnam)</option>
+                                                    <option value="+86">+86 (China)</option>
+                                                    <option value="+90">+90 (Turkey)</option>
+                                                    <option value="+92">+92 (Pakistan)</option>
+                                                    <option value="+93">+93 (Afghanistan)</option>
+                                                    <option value="+94">+94 (Sri Lanka)</option>
+                                                    <option value="+95">+95 (Myanmar)</option>
+                                                    <option value="+98">+98 (Iran)</option>
+                                                    <option value="+211">+211 (South Sudan)</option>
+                                                    <!-- Add more country codes as needed -->
+                                                </select>
+                                            </div>
+                                            <input type="text" id="number" name="number" class="form-control" placeholder="Phone Number" aria-label="Phone Number" required>
                                         </div>
-                                    </div>
+                                    
+                                    
+                                       
 
                                     <div class="col-12">
                                         <div class="input-group mb-3">
@@ -285,6 +365,42 @@
     </div>
     <script>
 
+$(document).ready(function() {
+            $('#countryCode').select2({
+                placeholder: "Select a country code",
+                allowClear: true,
+                templateResult: function (state) {
+                    if (!state.id) {
+                        return state.text;
+                    }
+                    var $state = $(
+                        '<span>' + state.text + '</span>'
+                    );
+                    return $state;
+                },
+                matcher: function(params, data) {
+                    // If there are no search terms, return all of the data
+                    if ($.trim(params.term) === '') {
+                        return data;
+                    }
+
+                    // Do not display the item if there is no 'text' property
+                    if (typeof data.text === 'undefined') {
+                        return null;
+                    }
+
+                    // Check if the search term matches the country name or code
+                    if (data.text.toLowerCase().indexOf(params.term.toLowerCase()) > -1) {
+                        return data;
+                    }
+
+                    // If it doesn't match, return `null` to exclude it from the results
+                    return null;
+                }
+            });
+        });
+                                       
+
         async function go(event) {
             event.preventDefault();
 
@@ -295,6 +411,7 @@
             // Example validation
             const name = document.getElementById("name").value;
             const email = document.getElementById("email").value;
+            const country =  document.getElementById("countryCode").value;
             const phonenumber = document.getElementById("number").value;
             const companyname = document.getElementById("companyname").value;
 
@@ -311,8 +428,9 @@
 
             function isValidPhoneNumber(input) {
 
-                var phoneRegex = /^\d{10}$/;
+                var phoneRegex = /^\d{10,20}$/;
                 return phoneRegex.test(input);
+    
             }
 
             function isValidCompanyName(input) {
@@ -350,7 +468,7 @@
                     OfficialData: {
                         Designation: "manager",
                         OffEmail: email,
-                        Phone: phonenumber,
+                        Phone: `${country} ${phonenumber}`,
                     },
                     Country: "",
                     StateOrCounty: "",
@@ -369,6 +487,8 @@
                 };
 
                 try {
+                 
+                    // console.log(postdata,"post");
                     // Make the POST request to the API endpoint
                     const response = await fetch("https://api.yozytech.com/api/v1/form/subscription_web_enquiry", {
                         method: "POST",
@@ -377,7 +497,7 @@
                         },
                         body: JSON.stringify(postdata),
                     });
-                    console.log(postdata, "data")
+                  
 
 
                     if (response.ok) {
