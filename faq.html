@@ -70,12 +70,13 @@
         <!--header section start-->
         <!--header start-->
         <header class="main-header w-100 z-10">
+
             <nav class="navbar navbar-expand-xl navbar-light sticky-header">
                 <div class="container d-flex align-items-center justify-content-lg-between position-relative">
-                    <a href="index.html" class="navbar-brand d-flex align-items-center mb-md-0 text-decoration-none">
-                        <img src="assets/img/logos/DevozyLogo2.svg" width="113" height="36" alt="logo"
+                    <a href="../index.html" class="navbar-brand d-flex align-items-center mb-md-0 text-decoration-none">
+                        <img src="../assets/img/logos/DevozyLogo2.svg" width="113" height="36" alt="logo"
                             class="img-fluid logo-white" />
-                        <img src="assets/img/logos/DevozyLogo.svg" width="113" height="36" alt="logo"
+                        <img src="../assets/img/logos/DevozyLogo.svg" width="113" height="36" alt="logo"
                             class="img-fluid logo-color" />
                     </a>
 
@@ -85,34 +86,238 @@
                             aria-controls="offcanvasWithBackdrop"></i>
                     </a>
                     <div class="clearfix"></div>
+                
                     <div class="collapse navbar-collapse justify-content-center">
-                        <ul class="nav col-12 col-md-auto justify-content-center main-menu">
+                        <ul class="nav col-12 col-md-auto justify-content-center main-menu">                         
                             <li class="nav-item dropdown">
-                                <a class="nav-link" href="index.html">Home</a>
-     
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Product</a>
+                                <div class="dropdown-menu border-0 rounded-custom shadow py-0 bg-white" style="margin-left: 180px;">
+                                    <div class="dropdown-grid rounded-custom width-full-3" >
+                                        <div class="dropdown-grid-item bg-white" >            
+                                            <div style="font-size: 12px; margin-left:14px">A Shift from DevOps to DevEx</div>
+                                            <a target="_blank" class="dropdown-item"
+                                            href="#" style="text-align: center;">
+                                             <div style="text-align: left; border-radius: 8px; width: 200px;">
+                                                <i class="fa-solid fa-infinity" style="color: #0011ff82; font-size: 20px; margin-bottom: 10px;"></i>
+                                                <div class="logo-color drop-title">Mordernize Devops</div>
+                                                <div style="font-size: 11px; color: #6b6b6b; line-height: 1.5;">
+                                                   
+                                                    Enterprise software delivery <br> enable 10x faster time-to-market & <br> improve 5x Developer productivity
+                                                </div>
+                                            </div>
+                                            </a>
+                                            <div style="font-size: 12px; margin-left:14px;margin-top:10px;">Hello, Deploy CRM app into UAT</div> 
+                                            <a target="_blank" class="dropdown-item"
+                                            href="#" style=" text-align: center;">
+                                             <div style="text-align: left; border-radius: 8px; width: 200px;">
+                                                <i class="fa-regular fa-star"  style="color: #00c8ff; font-size: 20px; margin-bottom: 10px;"></i>
+                                                <div class="drop-title">DeSSA</div>
+                                                <div style="font-size: 11px; color: #6b6b6b; line-height: 1.5;">
+                                                   
+                                                    Devozy.ai Self-service Assistant <br>(DeSsA) revolutionize the way how <br> the traditional DevOps works.
+                                                </div>
+                                            </div>
+                                            </a>
+                                        </div>
+                                        <div class="dropdown-grid-item bg-white" >           
+                                            <div style="font-size: 12px; margin-left:14px;">Greater visibility to CICD</div>                                                                                                                    
+                                            <a target="_blank" class="dropdown-item"
+                                            href="#" style="text-align: center;">
+                                             <div style="text-align: left; border-radius: 8px; width: 200px;">
+                                                <i class="fa-solid fa-bars-progress" style="color: #01b522; font-size: 20px; margin-bottom: 10px;"></i>
+                                                <div class="logo-color drop-title">Agile Project Mgmt</div>
+                                                <div style="font-size: 11px; color: #6b6b6b; line-height: 1.5;">
+                                                    Aim to integrate proj mgmt with <br> DevOps & Infra. Quite powerful <br> tool for IT Managers.
+                                                </div>
+                                            </div>
+                                            </a>
+                                            <div style="font-size: 12px; margin-left:14px; margin-top:10px;">Tailored IDP for Talend Qlik</div> 
+                                            <a target="_blank" class="dropdown-item"
+                                            href="#" style=" text-align: center;">
+                                             <div style="text-align: left; border-radius: 8px; width: 200px;">
+                                                <i class="fa-solid fa-laptop-medical" style="color: #FE6266; font-size: 20px; margin-bottom: 10px;"></i>
+                                                <div class="drop-title">Talend Qlik</div>
+                                                <div style="font-size: 11px; color: #6b6b6b; line-height: 1.5;">
+                                                  
+                                                    Say Goodbye to Manual Talend Qlik <br> Deployments! Seamless integration  <br> with Talend Qlik Cloud and TAC.
+                                                </div>
+                                            </div>
+                                            </a>
+                                        </div>
+                                        <div class="dropdown-grid-item last-item bg-light-subtle radius-right-side">
+                                            <a href="#">
+                                                <img src="../Products.jpg" alt="add" class="img-fluid rounded-custom" />
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
                             </li>
-                            <li><a href="#premium_devozy_feature" class="nav-link">Product</a></li>
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    Blog
-                                </a>
-                                <div class="dropdown-menu border-0 mt-1 rounded-custom shadow py-1 bg-white">
-                                    <a target="_blank" class="dropdown-item drop-title" href="blog/devops_platform_engineering.html">DevSecOps Platform Engineering</a>
-                                    <a target="_blank" class="dropdown-item" href="blog/devops_vs_devsecops.html">DevOps Vs DevSecOps</a>
-                                    <a target="_blank" class="dropdown-item" href="blog/devozy_advantages.html">Devozy Advantages</a>
-                                    <a target="_blank" class="dropdown-item" href="blog/devozy_Setup.html">Devozy Setup</a>
-                                    <a target="_blank" class="dropdown-item" href="blog/devozy_trend.html">DevOps Trends</a>
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Solutions</a>
+                                <div class="dropdown-menu border-0 rounded-custom shadow py-0 bg-white" style="margin-left: 180px;">
+                                    <div class="dropdown-grid rounded-custom width-full" style="width: 1000px;">
+                                        <div class="dropdown-grid-item bg-white radius-left-side">
+                                            <h5 class="drop-heading">Innovative Integrations</h5>
+                                            <a target="_blank" class="dropdown-item"
+                                            href="Innovatie Integration/aws-integration.html">         
+                                              <span class="me-2">
+                                                <img  style="height: 34px; width: 34px" src="../awslogo.svg"></img>
+                                              </span>
+                                              <div style="margin-left: 12px;">
+                                                <div class="drop-title">Amazon Web Services</div>
+                                                <div style="font-size: 12px; color: #6b6b6b; line-height: 1.5;">
+                                                  Quick setup your aws subscription & 
+                                                  start create CI pipeline,<br> software runtime platform
+                                                  such as EKS, ECS, EC2, S3 <br> Bucket  using readymade automations.
+                                                </div> 
+                                              </div>
+                                                
+                                            
+                                            </a>
+                                            <a target="_blank" class="dropdown-item"
+                                            href="Innovatie Integration/azure-integration.html">         
+                                              <span class="me-2">
+                                                <img  style="height: 30px; width: 30px" src="../Azurelogo.svg"></img>
+                                              </span>
+                                              <div style="margin-left: 12px;">
+                                                <div class="drop-title">Microsoft AZURE</div>
+                                                <div style="font-size: 12px; color: #6b6b6b; line-height: 1.5;">
+                                                    Few clicks to setup your azure subscription & start create CI pipeline,
+                                                    <br> software runtime platform such as AKS, ACS, VMs,
+                                                    <br> Storage on the fly using our platform.
+                                                </div> 
+                                              </div>
+                                                
+                                            
+                                            </a>
+                                            <a target="_blank" class="dropdown-item"
+                                            href="Innovatie Integration/gcp-integration.html">         
+                                              <span class="me-2">
+                                                <img  style="height: 34px; width: 34px" src="../google-cloud.svg"></img>
+                                              </span>
+                                              <div style="margin-left: 12px;">
+                                                <div class="drop-title">Google Cloud Platform</div>
+                                                <div style="font-size: 12px; color: #6b6b6b; line-height: 1.5;">
+                                                    Simple form to setup your gcp subscription & start create CI Codebuild,
+                                                   <br> GKE, Container Engine, Compute Engine, Storage by Developers 
+                                                     <br> with no Devops, Cloud knowledge.
+                                                </div> 
+                                              </div>
+                                                
+                                            
+                                            </a>
+                                            <a target="_blank" class="dropdown-item"
+                                            href="Innovatie Integration/talend-qlik-integration.html">         
+                                              <span class="me-2">
+                                                <img  style="height: 34px; width: 34px" src="../Talendlogo.svg"></img>
+
+                                              </span>
+                                              <div style="margin-left: 12px;">
+                                                <div class="drop-title">Talend Qlik</div>
+                                                <div style="font-size: 12px; color: #6b6b6b; line-height: 1.5;">
+                                                    Seamless integration with Talend cloud, TAC for your jobs deployments
+                                                    <br> supports Nexus, Jenkins for your Talend project needs.
+                                                </div> 
+                                              </div>            
+                                            </a>
+                                        </div>
+                                        <div class="dropdown-grid-item radius-right-side bg-light-subtle">
+                                            <h6 class="drop-heading">For IT Engineering Team</h6>
+                                            <a href="IT Eng Team/dev_ssp_idp.html" class="dropdown-link px-0">
+                                                <span class="me-2">
+                             
+                            </span>
+                            <div class="drop-title" style="font-size: 13px;">Developer Self Service Portal (IDP)</div>
+                                            </a>
+                                            <a href="IT Eng Team/Key_diff_dev&idp.html" class="dropdown-link px-0">
+                                                <span class="me-2">
+                            
+                            </span>
+                                                <div class="drop-title" style="font-size: 13px;">Key differentiator between Devozy.ai & Other IDPs</div>
+                                            </a>
+                                            <a href="IT Eng Team/value_adds_it.html" class="dropdown-link px-0">
+                                                <span class="me-2">
+                             
+                            </span>
+                                                <div class="drop-title" style="font-size: 13px;">How Devozy.ai bring value-adds to IT Engg. Teams</div>
+                                            </a>
+                                            <a href="IT Eng Team/idp_market_research.html" class="dropdown-link px-0">
+                                                <span class="me-2">
+                           
+                            </span>
+                                                <div class="drop-title" style="font-size: 13px;">IDP Market Research - Devozy.ai's marketplace</div>
+                                            </a>
+                                            <a href="IT Eng Team/agile_int_devops.html" class="dropdown-link px-0">
+                                                <span class="me-2">
+                             
+                            </span>
+                                                <div class="drop-title" style="font-size: 13px;">Agile Project management Integrated with DevSecOps.</div>
+                                            </a>
+                                            <a href="IT Eng Team/savehours.html" class="dropdown-link">
+                                                <span class="me-2">
+                             
+                            </span>
+                            <div class="drop-title" style="font-size: 13px;">Save Hours on Talend Qlik Deployments with Devozy.ai.</div>
+                                            </a>
+                                            <a href="IT Eng Team/5ways_cicd.html" class="dropdown-link">
+                                                <span class="me-2">
+                             
+                            </span>
+                            <div class="drop-title" style="font-size: 13px;">5 Ways how Devozy.ai simplifies Talend Qlik CI/CD.</div>
+                                            </a>
+                                            <a href="IT Eng Team/dedicated_cicd_tool.html" class="dropdown-link">
+                                                <span class="me-2">
+                             
+                            </span>
+                            <div class="drop-title" style="font-size: 13px;">Why Qlik and Talend Users Need a Dedicated CI/CD Tool</div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
                             </li>
+                                        <li class="nav-item dropdown">
+                                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Resources</a>
+                                            <div class="dropdown-menu border-0 rounded-custom shadow py-0 bg-white">
+                                                <div class="dropdown-grid rounded-custom width-full-3" >
+                                                    <div class="dropdown-grid-item bg-white radius-left-side" >                                                                                                                             
+                                                        <a target="_blank" class="dropdown-item"
+                                                        href="../blog/blog_homepage.html" style="margin-top:10px; text-align: center;">
+                                                         <div style="text-align: left; border-radius: 8px; width: 200px;">
+                                                            <i class="fa-regular fa-message" style="color: #ffaa00; font-size: 20px; margin-bottom: 10px;"></i>
+                                                            <div  class="drop-title">Blogs</div>
+                                                            <div style="font-size: 12px; color: #6b6b6b; line-height: 1.5;">
+                                                                <!-- Read about all things <br>account intelligence and <br> GTM analytics -->
+                                                                Read about all things Evolution<br>of Developer Self service<br>platform(IDP) and more.
+                                                            </div>
+                                                        </div>
+                                                        </a>
+                                                    </div>
+                                                    <div class="dropdown-grid-item bg-white">
+                                                        <a target="_blank" class="dropdown-item"
+                                                        href="../faq.html" style="margin-top:10px; text-align: center;">
+                                                         <div style="text-align: left; border-radius: 8px; width: 200px;">
+                                                            <i class="fa-regular fa-comments" style="color: #ff4500; font-size: 20px; margin-bottom: 10px;"></i>
+                                                            <div class="drop-title"  >FAQ</div>
+                                                            <div style="font-size: 12px; color: #6b6b6b; line-height: 1.5;">
+                                                               Everything you need to <br> know, answered with clarity <br> and detail.
+                                                            </div>
+                                                        </div>
+                                                        </a>
+                                                      
+                                                    </div>
+                                                    <div class="dropdown-grid-item last-item bg-light-subtle radius-right-side">
+                                                        <a href="#">
+                                                            <img src="../5.jpg" alt="add" class="img-fluid rounded-custom"  />
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
                             <li><a href="#Pricing" class="nav-link">Pricing</a></li>
-                            <li><a href="faq.html" class="nav-link">FAQ</a></li>
-                            <li><a href="contact-us.html" class="nav-link">Contact</a></li>
-        
                         </ul>
 
 
                     </div>
-
                     <div class="action-btns text-end me-5 me-lg-0 d-none d-md-block d-lg-block">
                         <a href="javascript:void(0)" class="btn btn-link p-1 tt-theme-toggle">
                             <div class="tt-theme-light" data-bs-toggle="tooltip" data-bs-placement="left"
@@ -121,7 +326,8 @@
                                 data-bs-title="Dark"><i class="flaticon-moon-1 fs-lg"></i></div>
                         </a> <a href="https://web.devozy.ai/" target="_blank"
                             class="btn btn-link text-decoration-none me-2">Login</a>
-                        <a href="request-demo.html" class="btn btn-primary" target="_blank">Get Started</a>
+                        <button onclick="window.location.href='../request-demo.html'" name="getdevozyfree" type="submit" class="btn btn-primary">Get Devozy Free
+                   </button>
                     </div>
                 </div>
             </nav>
@@ -148,7 +354,7 @@
                                 <div class="dropdown-grid rounded-custom width-full-3">
                                     <div class="dropdown-grid-item bg-white radius-left-side">
                                         <!-- <h6 class="drop-heading">FAQ</h6> -->
-                                        <a href="Faq.html" class="dropdown-link">
+                                        <a href="#" class="dropdown-link">
                                             <span class="me-2">
                                                 <!-- <i class="flaticon-menu"></i> -->
                                             </span>
@@ -181,179 +387,184 @@
             </div>
             <!--offcanvas menu end-->
         </header>
-        <!--header end--> <!--header section end-->
-        <!--faq section start-->
-        <section class="mk-faq bg-white pt-100 pb-60 overflow-hidden">
+         <!--page header section start-->
+         <section class="page-header position-relative overflow-hidden ptb-120 bg-dark" style="background: url('assets/img/page-header-bg.svg')no-repeat bottom left">
             <div class="container">
-                <div class="row align-items-start justify-content-between g-5">
-                    <div class="col-xl-7">
-                        <div class="mk-faq-feature">
-                            <img src="assets/img/faq.svg" alt="not found" class="img-fluid">
+                <div class="row">
+                    <div class="col-lg-8 col-md-12">
+                        <h1 class="display-5 fw-bold">FAQ</h1>
+                        <p class="lead">Seamlessly actualize client-based users after out-of-the-box value. Globally embrace
+                            strategic data through frictionless expertise.</p>
+                    </div>
+                </div>
+                <div class="bg-circle rounded-circle circle-shape-3 position-absolute bg-dark-light right-5"></div>
+            </div>
+        </section>
+        <section class="faq-section ptb-120">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-7 col-12">
+                        <div class="section-heading mb-5 text-center">
+                            <h5 class="h6 text-primary">FAQ</h5>
+                            <h2>Frequently Asked Questions</h2>
+                            <p>Globally whiteboard global web-readiness rather than holistic action
+                                items. Uniquely communicate synergistic markets.</p>
                         </div>
                     </div>
-                    <div class="col-xl-5">
-                        <div class="mk-faq-content">
-                            <div class="mk-title mb-30">
-                                <span class="mk-subtitle fw-bold mb-3"> FAQ</span>
-                                <h2 class="mk-heading mb-3">Frequently Asked Questions</h2>
-                                <p class="mb-0">Globally whiteboard global web-readiness rather than holistic action
-                                    items. Uniquely communicate synergistic markets.</p>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-lg-7 col-12">
+                        <div class="accordion faq-accordion" id="accordionExample">
+                            <div class="accordion-item border border-2 active">
+                                <h5 class="accordion-header" id="faq-1">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-1" aria-expanded="true">
+                                        Is this
+                                        suitable for all business sizes ?
+                                    </button>
+                                </h5>
+                                <div id="collapse-1" class="accordion-collapse collapse show" aria-labelledby="faq-1" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        Yes, it is suitable for all business sizes.
+                                    </div>
+                                </div>
                             </div>
-                            <div class="mk-accordion accordion" id="mk-accordion">
-                                <div class="accordion-item active">
-                                    <div class="accordion-header">
-                                        <a href="#acc_1" class="accordion-button" data-bs-toggle="collapse">Is this
-                                            suitable for all business sizes ?</a>
-                                    </div>
-                                    <div class="accordion-collapse collapse show" id="acc_1"
-                                        data-bs-parent="#mk-accordion">
-                                        <div class="accordion-body">
-                                            <p class="mb-0">Yes, it is suitable for all business sizes.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="accordion-item">
-                                    <div class="accordion-header">
-                                        <a href="#acc_2" class="accordion-button collapsed" data-bs-toggle="collapse">Is
-                                            my data safe with Devozy ?</a>
-                                    </div>
-                                    <div class="accordion-collapse collapse" id="acc_2" data-bs-parent="#mk-accordion">
-                                        <div class="accordion-body">
-                                            <p class="mb-0">Yes, we implement all possible technical and organizational
-                                                security measures to ensure your personal data are confidential and
-                                                safe.</p>
-                                        </div>
+                            <div class="accordion-item border border-2">
+                                <h5 class="accordion-header" id="faq-2">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-2" aria-expanded="false">
+                                        Is my data safe with Devozy ?
+                                    </button>
+                                </h5>
+                                <div id="collapse-2" class="accordion-collapse collapse" aria-labelledby="faq-2" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        Yes, we implement all possible technical and organizational
+                                        security measures to ensure your personal data are confidential and
+                                        safe.
                                     </div>
                                 </div>
-                                <div class="accordion-item">
-                                    <div class="accordion-header">
-                                        <a href="#acc_3" class="accordion-button collapsed"
-                                            data-bs-toggle="collapse">Can I connect with a live agent for support ?</a>
-                                    </div>
-                                    <div class="accordion-collapse collapse" id="acc_3" data-bs-parent="#mk-accordion">
-                                        <div class="accordion-body">
-                                            <p class="mb-0">Yes, you can connect with our live agent. If in case do you
-                                                need any help, please do reach us at business@yozytech.com.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="accordion-item">
-                                    <div class="accordion-header">
-                                        <a href="#acc_4" class="accordion-button collapsed" data-bs-toggle="collapse">
-                                            What is the DevSecOps Accelerator & multi-cloud platform?</a>
-                                    </div>
-                                    <div class="accordion-collapse collapse" id="acc_4" data-bs-parent="#mk-accordion">
-                                        <div class="accordion-body">
-                                            <p class="mb-0">The DevSecOps Accelerator is an innovative SaaS product that
-                                                combines DevSecOps practices with multi-cloud integration, all while
-                                                seamlessly incorporating Agile and IT Service Management (ITSM)
-                                                methodologies. It's designed to streamline collaboration, enhance
-                                                security, and optimize application delivery for organizations seeking a
-                                                holistic approach to software development.</p>
-                                        </div>
+                            </div>
+                            <div class="accordion-item border border-2">
+                                <h5 class="accordion-header" id="faq-3">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-3" aria-expanded="false">
+                                        Can I connect with a live agent for support ?
+                                    </button>
+                                </h5>
+                                <div id="collapse-3" class="accordion-collapse collapse" aria-labelledby="faq-3" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        Yes, you can connect with our live agent. If in case do you
+                                        need any help, please do reach us at business@yozytech.com.
                                     </div>
                                 </div>
+                            </div>
 
-                                <div id="mk-accordion">
-                                    <!-- Q&A 1 -->
-                                    <div class="accordion-item">
-                                        <div class="accordion-header">
-                                            <a href="#acc_5" class="accordion-button collapsed"
-                                                data-bs-toggle="collapse">How does this product enhance collaboration
-                                                between DevSecOps, Agile, and ITSM teams?</a>
-                                        </div>
-                                        <div class="accordion-collapse collapse" id="acc_5"
-                                            data-bs-parent="#mk-accordion">
-                                            <div class="accordion-body">
-                                                <p class="mb-0">The product fosters collaboration by integrating the
-                                                    principles of DevSecOps, Agile, and ITSM into a unified platform.
-                                                    This alignment facilitates faster communication, shared goals, and a
-                                                    common understanding of project status across teams, resulting in
-                                                    more efficient and coordinated efforts.</p>
-                                            </div>
-                                        </div>
+                            <div class="accordion-item border border-2">
+                                <h5 class="accordion-header" id="faq-4">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-4" aria-expanded="false">
+                                        What is the DevSecOps Accelerator & multi-cloud platform?
+                                    </button>
+                                </h5>
+                                <div id="collapse-4" class="accordion-collapse collapse" aria-labelledby="faq-4" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        The DevSecOps Accelerator is an innovative SaaS product that
+                                        combines DevSecOps practices with multi-cloud integration, all while
+                                        seamlessly incorporating Agile and IT Service Management (ITSM)
+                                        methodologies. It's designed to streamline collaboration, enhance
+                                        security, and optimize application delivery for organizations seeking a
+                                        holistic approach to software development.
                                     </div>
+                                </div>
+                            </div>
 
-                                    <!-- Q&A 2 -->
-                                    <div class="accordion-item">
-                                        <div class="accordion-header">
-                                            <a href="#acc_6" class="accordion-button collapsed"
-                                                data-bs-toggle="collapse">What cloud providers does the multi-cloud
-                                                platform support?</a>
-                                        </div>
-                                        <div class="accordion-collapse collapse" id="acc_6"
-                                            data-bs-parent="#mk-accordion">
-                                            <div class="accordion-body">
-                                                <p class="mb-0">Our multi-cloud platform is designed to seamlessly
+                            <div class="accordion-item border border-2">
+                                <h5 class="accordion-header" id="faq-5">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-5" aria-expanded="false">
+                                        How does this product enhance collaboration
+                                        between DevSecOps, Agile, and ITSM teams?
+                                    </button>
+                                </h5>
+                                <div id="collapse-5" class="accordion-collapse collapse" aria-labelledby="faq-5" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        The product fosters collaboration by integrating the
+                                        principles of DevSecOps, Agile, and ITSM into a unified platform.
+                                        This alignment facilitates faster communication, shared goals, and a
+                                        common understanding of project status across teams, resulting in
+                                        more efficient and coordinated efforts.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item border border-2">
+                                <h5 class="accordion-header" id="faq-6">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-6" aria-expanded="false">
+                                        What cloud providers does the multi-cloud
+                                        platform support?
+                                    </button>
+                                </h5>
+                                <div id="collapse-6" class="accordion-collapse collapse" aria-labelledby="faq-6" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        Our multi-cloud platform is designed to seamlessly
                                                     integrate with popular cloud providers such as AWS, Azure, Google
                                                     Cloud, and more. This compatibility ensures you can leverage your
-                                                    preferred cloud resources without constraints.</p>
-                                            </div>
-                                        </div>
+                                                    preferred cloud resources without constraints.
                                     </div>
+                                </div>
+                            </div>
 
-                                    <!-- Q&A 3 -->
-                                    <div class="accordion-item">
-                                        <div class="accordion-header">
-                                            <a href="#acc_7" class="accordion-button collapsed"
-                                                data-bs-toggle="collapse">How does the DevSecOps Accelerator address
-                                                security concerns?</a>
-                                        </div>
-                                        <div class="accordion-collapse collapse" id="acc_7"
-                                            data-bs-parent="#mk-accordion">
-                                            <div class="accordion-body">
-                                                <p class="mb-0">The DevSecOps Accelerator prioritizes security by
+                            <div class="accordion-item border border-2">
+                                <h5 class="accordion-header" id="faq-7">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-7" aria-expanded="false">
+                                        How does the DevSecOps Accelerator address
+                                        security concerns?
+                                    </button>
+                                </h5>
+                                <div id="collapse-7" class="accordion-collapse collapse" aria-labelledby="faq-7" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                      The DevSecOps Accelerator prioritizes security by
                                                     embedding robust security measures throughout the software
                                                     development lifecycle. These include automated security testing,
                                                     vulnerability scans, code reviews, and compliance checks, ensuring
-                                                    that security is integrated from the outset.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <!-- Q&A 4 -->
-                                    <div class="accordion-item">
-                                        <div class="accordion-header">
-                                            <a href="#acc_8" class="accordion-button collapsed"
-                                                data-bs-toggle="collapse">Can the workflows within the DevSecOps
-                                                Accelerator be customized to fit our processes?</a>
-                                        </div>
-                                        <div class="accordion-collapse collapse" id="acc_8"
-                                            data-bs-parent="#mk-accordion">
-                                            <div class="accordion-body">
-                                                <p class="mb-0">Absolutely. The DevSecOps Accelerator offers flexible
-                                                    workflow customization to align with your specific organizational
-                                                    processes. This adaptability ensures that your unique requirements
-                                                    are met without compromising efficiency.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <!-- Q&A 5 -->
-                                    <div class="accordion-item">
-                                        <div class="accordion-header">
-                                            <a href="#acc_9" class="accordion-button collapsed"
-                                                data-bs-toggle="collapse">How does the product handle continuous
-                                                integration and continuous delivery (CI/CD)?</a>
-                                        </div>
-                                        <div class="accordion-collapse collapse" id="acc_9"
-                                            data-bs-parent="#mk-accordion">
-                                            <div class="accordion-body">
-                                                <p class="mb-0">The product provides a seamless CI/CD pipeline,
-                                                    automating tasks such as building, testing, and deploying
-                                                    applications. This automation accelerates the delivery process,
-                                                    reduces manual errors, and enhances overall software quality.</p>
-                                            </div>
-                                        </div>
+                                                    that security is integrated from the outset.
                                     </div>
                                 </div>
+                            </div>
 
+                            <div class="accordion-item border border-2">
+                                <h5 class="accordion-header" id="faq-8">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-8" aria-expanded="false">
+                                        Can the workflows within the DevSecOps
+                                        Accelerator be customized to fit our processes?
+                                    </button>
+                                </h5>
+                                <div id="collapse-8" class="accordion-collapse collapse" aria-labelledby="faq-8" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        Absolutely. The DevSecOps Accelerator offers flexible
+                                        workflow customization to align with your specific organizational
+                                        processes. This adaptability ensures that your unique requirements
+                                        are met without compromising efficiency.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item border border-2">
+                                <h5 class="accordion-header" id="faq-9">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-9" aria-expanded="false">
+                                        How does the product handle continuous
+                                                integration and continuous delivery (CI/CD)?
+                                    </button>
+                                </h5>
+                                <div id="collapse-9" class="accordion-collapse collapse" aria-labelledby="faq-9" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        The product provides a seamless CI/CD pipeline,
+                                        automating tasks such as building, testing, and deploying
+                                        applications. This automation accelerates the delivery process,
+                                        reduces manual errors, and enhances overall software quality.
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </section> <!--faq section end-->
+        </section>
+        <!--faq section end-->
 
         <!--footer section start-->
         <!--footer section start-->

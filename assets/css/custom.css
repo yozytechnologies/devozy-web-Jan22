@@ -24,6 +24,10 @@
     height: 250px;
   }
   /* Add more styles as needed */
+  .mobileawslogo{
+    width: 60px !important;
+  
+  }
 }
 .imagediv .img-fluid{
   height:70%;
@@ -35,3 +39,4 @@
   align-items:center;
   justify-content: center;
 }
+
