@@ -96,8 +96,8 @@
   height: 2px;
   background: repeating-linear-gradient(
     45deg,
-    #e8fff2,
-    #FF6D70 10px,
+    #edffe8,
+    #fcfbf6 10px,
     #ecf0f1 10px,
     #ecf0f1 20px
   );
@@ -135,7 +135,7 @@
  /* box-shadow: 2px 4px 4px #0003; */
  }
  .devworkflow_step_num.is-pink {
-  background-color: #ced4f8;
+  background-color: #FFE2A8;
   /* font-size: 12px !important; */
  }
 
@@ -144,14 +144,14 @@
  }
 
  .devworkflow_step_num.is-green {
- background-color: #d7ebe4;
+ background-color: #D6EEFB;
  }
  .devworkflow_step_num.is-purple._3 {
   left: 100%;
  }
 
  .devworkflow_step_num.is-purple {
- background-color: #fae0fd;
+ background-color: #DCFCE7;
  }
 
  @media screen and (max-width: 991px) {
@@ -362,6 +362,11 @@ ol li {
   height: auto;
   width: auto;
 }
+
+[data-bs-theme=dark] .bg-test{
+background-color: #171717;
+}
+
 
 
 
