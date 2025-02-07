@@ -37,6 +37,9 @@
   .devworkflow_dotted_line{
     display: none;
   }
+  /* .overflow-hidden{
+    display: none;
+  } */
 }
 .imagediv .img-fluid{
   height:70%;
@@ -65,7 +68,7 @@
  /* grid-row-gap: 250px; */
  /* justify-content: space-between; */
  align-items: center;
- padding-top: 30px;
+ /* padding-top: 30px; */
  padding-bottom: 24px;
  display: flex;
  }
@@ -156,7 +159,8 @@
 
  @media screen and (max-width: 991px) {
   .devworkflow_step_content, .devworkflow_step_img_wrapper {
- width: 60%;
+ width: 90% !important;
+ margin-top: 1.1rem;
  }
  }
  

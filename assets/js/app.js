@@ -66,7 +66,7 @@ jQuery(function ($) {
     spaceBetween: 5,
     slidesPerGroup: 1,
     loop: true,
- 
+
     breakpoints: {
       320: {
         slidesPerView: 1,
@@ -87,8 +87,8 @@ jQuery(function ($) {
 
     navigation: {
       nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev"
-    }
+      prevEl: ".swiper-button-prev",
+    },
   });
   //swiper slide js
   var swiper = new Swiper(".testimonialThreeSwiper", {
@@ -378,22 +378,47 @@ jQuery(function ($) {
   });
 
   //digital marketing brand logo logo
+  // var swiper = new Swiper(".digi-logo-slider", {
+  //   slidesPerView: 1,
+  //   spaceBetween: 24,
+  //   speed: 4000,
+  //   autoplay: {
+  //     delay: 0,
+  //   },
+  //   slidesPerGroup: 1,
+  //   loop: true,
+  //   breakpoints: {
+  //     320: {
+  //       slidesPerView: 1,
+  //       spaceBetween: 16,
+  //     },
+  //     768: {
+  //       slidesPerView: 3,
+  //     },
+  //     991: {
+  //       slidesPerView: 6,
+  //     },
+  //   },
+  // });
   var swiper = new Swiper(".digi-logo-slider", {
-    slidesPerView: 1,
+    slidesPerView: "auto", // Allows flexible layout
     spaceBetween: 24,
-    speed: 1000,
+    speed: 1600, // Adjust speed for smoother movement
     autoplay: {
-      delay: 2500,
+      delay: 1, // Reduces any possible pauses
+      disableOnInteraction: false,
+      waitForTransition: false,
     },
-    slidesPerGroup: 1,
-    loop: true,
+    loop: true, // Ensures infinite scrolling
+    freeMode: true, // Enables smooth continuous scrolling
+    freeModeMomentum: false, // Prevents momentum from slowing it down
     breakpoints: {
       320: {
-        slidesPerView: 1,
+        slidesPerView: 2,
         spaceBetween: 16,
       },
       768: {
-        slidesPerView: 3,
+        slidesPerView: 4,
       },
       991: {
         slidesPerView: 6,
