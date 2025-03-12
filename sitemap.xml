@@ -3,67 +3,172 @@
 		<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 	<loc>https://devozy.ai/</loc>
-	<lastmod>2024-03-06T08:29:26+01:00</lastmod>
-	<priority>1.0</priority>
+	<lastmod>2025-03-12T06:41:36+01:00</lastmod>
+	<priority>0.6</priority>
 </url>
 <url>
 	<loc>https://devozy.ai/index.html</loc>
-	<lastmod>2024-03-06T08:29:26+01:00</lastmod>
+	<lastmod>2025-03-12T06:41:36+01:00</lastmod>
 	<priority>1.0</priority>
 </url>
 <url>
-	<loc>https://devozy.ai/blog/devops_Tools_Strategy.html</loc>
-	<lastmod>2024-03-06T08:29:26+01:00</lastmod>
+	<loc>https://devozy.ai/product/modernize-devops.html</loc>
+	<lastmod>2025-03-12T06:41:36+01:00</lastmod>
 	<priority>0.8</priority>
 </url>
 <url>
-	<loc>https://devozy.ai/blog/devozy_transformingdevops.html</loc>
-	<lastmod>2024-03-06T08:29:26+01:00</lastmod>
+	<loc>https://devozy.ai/product/dessa.html</loc>
+	<lastmod>2025-03-12T06:41:36+01:00</lastmod>
 	<priority>0.8</priority>
 </url>
 <url>
-	<loc>https://devozy.ai/blog/devops_choosing_configuration_management_tools.html</loc>
-	<lastmod>2024-03-06T08:29:26+01:00</lastmod>
+	<loc>https://devozy.ai/product/agile-prog-mgmt.html</loc>
+	<lastmod>2025-03-12T06:41:36+01:00</lastmod>
 	<priority>0.8</priority>
 </url>
 <url>
-	<loc>https://devozy.ai/blog/devops_platform_engineering.html</loc>
-	<lastmod>2024-03-06T08:29:26+01:00</lastmod>
+	<loc>https://devozy.ai/product/talend-qlik.html</loc>
+	<lastmod>2025-03-12T06:41:36+01:00</lastmod>
 	<priority>0.8</priority>
 </url>
 <url>
-	<loc>https://devozy.ai/blog/devops_vs_devsecops.html</loc>
-	<lastmod>2024-03-06T08:29:26+01:00</lastmod>
+	<loc>https://devozy.ai/Innovatie%20Integration/aws-integration.html</loc>
+	<lastmod>2025-03-12T06:41:36+01:00</lastmod>
 	<priority>0.8</priority>
 </url>
 <url>
-	<loc>https://devozy.ai/blog/devozy_advantages.html</loc>
-	<lastmod>2024-03-06T08:29:26+01:00</lastmod>
+	<loc>https://devozy.ai/Innovatie%20Integration/azure-integration.html</loc>
+	<lastmod>2025-03-12T06:41:36+01:00</lastmod>
 	<priority>0.8</priority>
 </url>
 <url>
-	<loc>https://devozy.ai/blog/devozy_Setup.html</loc>
-	<lastmod>2024-03-06T08:29:26+01:00</lastmod>
+	<loc>https://devozy.ai/Innovatie%20Integration/gcp-integration.html</loc>
+	<lastmod>2025-03-12T06:41:36+01:00</lastmod>
 	<priority>0.8</priority>
 </url>
 <url>
-	<loc>https://devozy.ai/blog/devozy_trend.html</loc>
-	<lastmod>2024-03-06T08:29:26+01:00</lastmod>
+	<loc>https://devozy.ai/Innovatie%20Integration/talend-qlik-integration.html</loc>
+	<lastmod>2025-03-12T06:41:36+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://devozy.ai/IT%20Eng%20Team/dev_ssp_idp.html</loc>
+	<lastmod>2025-03-12T06:41:36+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://devozy.ai/IT%20Eng%20Team/Key_diff_dev&amp;idp.html</loc>
+	<lastmod>2025-03-12T06:41:36+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://devozy.ai/IT%20Eng%20Team/value_adds_it.html</loc>
+	<lastmod>2025-03-12T06:41:36+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://devozy.ai/IT%20Eng%20Team/idp_market_research.html</loc>
+	<lastmod>2025-03-12T06:41:36+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://devozy.ai/IT%20Eng%20Team/agile_int_devops.html</loc>
+	<lastmod>2025-03-12T06:41:36+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://devozy.ai/IT%20Eng%20Team/savehours.html</loc>
+	<lastmod>2025-03-12T06:41:36+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://devozy.ai/IT%20Eng%20Team/5ways_cicd.html</loc>
+	<lastmod>2025-03-12T06:41:36+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://devozy.ai/IT%20Eng%20Team/dedicated_cicd_tool.html</loc>
+	<lastmod>2025-03-12T06:41:36+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://devozy.ai/IT%20Eng%20Team/agile-kanban.html</loc>
+	<lastmod>2025-03-12T06:41:36+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://devozy.ai/blog/blog_homepage.html</loc>
+	<lastmod>2025-03-12T06:41:36+01:00</lastmod>
 	<priority>0.8</priority>
 </url>
 <url>
 	<loc>https://devozy.ai/faq.html</loc>
-	<lastmod>2024-03-06T08:29:26+01:00</lastmod>
+	<lastmod>2025-03-12T06:41:36+01:00</lastmod>
 	<priority>1.0</priority>
 </url>
 <url>
-	<loc>https://devozy.ai/contact-us.html</loc>
-	<lastmod>2024-03-06T08:29:26+01:00</lastmod>
+	<loc>https://devozy.ai/pricing-plans.html</loc>
+	<lastmod>2025-03-12T06:41:36+01:00</lastmod>
 	<priority>1.0</priority>
 </url>
 <url>
 	<loc>https://devozy.ai/request-demo.html</loc>
-	<lastmod>2024-03-06T08:29:26+01:00</lastmod>
+	<lastmod>2025-03-12T06:41:36+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://devozy.ai/contact-us.html</loc>
+	<lastmod>2025-03-12T06:41:36+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://devozy.ai/devozy.ai/qliktalend_devops.html</loc>
+	<lastmod>2025-03-12T06:41:36+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://devozy.ai/blog/devops_choosing_configuration_management_tools.html</loc>
+	<lastmod>2025-03-12T06:41:41+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://devozy.ai/blog/devops_platform_engineering.html</loc>
+	<lastmod>2025-03-12T06:41:41+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://devozy.ai/blog/devops_Tools_Strategy.html</loc>
+	<lastmod>2025-03-12T06:41:41+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://devozy.ai/blog/devops_vs_devsecops.html</loc>
+	<lastmod>2025-03-12T06:41:41+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://devozy.ai/blog/devozy_advantages.html</loc>
+	<lastmod>2025-03-12T06:41:41+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://devozy.ai/blog/devozy_Setup.html</loc>
+	<lastmod>2025-03-12T06:41:41+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://devozy.ai/blog/devozy_transformingdevops.html</loc>
+	<lastmod>2025-03-12T06:41:41+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://devozy.ai/blog/devozy_trend.html</loc>
+	<lastmod>2025-03-12T06:41:41+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://devozy.ai/thankyou.html</loc>
+	<lastmod>2025-03-12T06:41:41+01:00</lastmod>
 	<priority>1.0</priority>
 </url>
 </urlset>
