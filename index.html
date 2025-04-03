@@ -491,7 +491,7 @@
                                                 </div>
                                             </div>
                                         </li>
-                            <li><a href="pricing-plans.html" class="nav-link">Pricing</a></li>
+                            <li><a href="pricing-plans.html" class="nav-link">Plan</a></li>
                                         <!-- <li class="nav-item dropdown">
                                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Blog</a>
                                             <div class="dropdown-menu border-0 rounded-custom shadow py-0 bg-white">
@@ -560,10 +560,10 @@
                         </a> <a href="https://web.devozy.ai/" target="_self"
                             class="btn btn-link text-decoration-none me-2">Login</a>
                        <!--<a href="request-demo.html" class="btn btn-primary" target="_blank">Get Devozy Free</a> -->
-                        <button onclick="window.location.href='request-demo.html'" name="getdevozyfree" type="submit" class="btn btn-primary">Get Started
+                        <button onclick="window.location.href='javascript:void(0);'" data-bs-toggle="modal" data-bs-target="#devozyTrialModal"name="getdevozyfree" type="submit" class="btn btn-primary">Try Devozy.ai Now
                    </button>
                     </div>
-                </div>
+                </div>  
             </nav>
             <!--offcanvas menu start-->
             <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasWithBackdrop">
@@ -866,7 +866,7 @@
                                             </div>
                                         </div>
                                     </li>
-                        <li><a href="pricing-plans.html" class="nav-link">Pricing</a></li>
+                        <li><a href="pricing-plans.html" class="nav-link">Plan</a></li>
                                     <!-- <li class="nav-item dropdown">
                                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Blog</a>
                                         <div class="dropdown-menu border-0 rounded-custom shadow py-0 bg-white">
@@ -932,14 +932,48 @@
         <!--header section end-->
         
          <!--hero section start-->
-         <section class="hero-section ptb-60" style="background: url('assets/img/shape/dot-dot-wave-shape.svg')no-repeat bottom center">
+         <section class="hero-section ptb-60  position-relative " style="background:linear-gradient(135deg, #4F00FF 0%, #C800FF 33%, #FF6A00 66%, #FF3C6A 100%)
+, url('assets/img/shape/dot-dot-wave-shape.svg')no-repeat bottom center">
             <div class="container">
-                <div class="row align-items-center justify-content-lg-between">
-                    <div class="col-xl-5 col-lg-5">
+                <div class="row align-items-center  justify-content-lg-between">
+                    <div class="col-xl-7 col-lg-7">
                         <div class="hero-content-wrap text-center text-xl-start text-lg-start" data-aos="fade-right">
-                            <h1 class="fw-bold display-5">World Class AI Assisted Developer Self Service Platform (IDP)</h1>
-                            <p class="lead">Devozy.ai is an AI-powered self-service IDP platform that delivers from day one, streamlining cloud provisioning, automation, scaling, monitoring, and security boosting productivity 5x and cutting costs 10x.</p>
-                            <div class="hero-subscribe-form-wrap pt-4 position-relative m-auto m-xl-0 d-none d-md-block d-lg-block d-xl-block">
+                            <h1 class="fw-bold display-5 text-white">The Ultimate DevOps Automation Platform</h1>
+                            <h6 class="text-white"> Let your developers focus on building great products—Devozy.ai automates the rest from day 1.</h6>
+
+                            <!-- <p class="lead">Devozy.ai is an AI-powered self-service IDP platform that delivers from day one, streamlining cloud provisioning, automation, scaling, monitoring, and security boosting productivity 5x and cutting costs 10x.</p> -->
+                            <p class="features-list text-white" style="font-size: 16px;">
+                                ✅ Eliminate DevOps Bottlnecks – The delays from Infra and DevOps teams <br/>
+                                ☁️ Instant Cloud Environments – Full configured across cloud in seconds<br/>
+                                ⚙️ Readymade CICD Pipeline –Template for all technologies<br/>
+                                📈 Accelerate Software Delivery –  5x faster , 10x cost reduction<br/>
+                              </p>
+                              <p class=" text-white">
+                                🎁 Free 1 Application Environment Setup in –  <b>AWS, Azure, or GCP </b><br/>
+No DevOps. No Scripts. Just Click & Deploy.
+                            </p>
+                            <div class="book-call">
+                                <!-- <div class="avatars">
+                                    <img src="avatar1.jpg" alt="Team member 1">
+                                    <img src="avatar2.jpg" alt="Team member 2">
+                                    <img src="avatar3.jpg" alt="Team member 3">
+                                    <img src="avatar4.jpg" alt="Team member 1">
+                                </div>
+                                <a href="request-demo.html" class="call-link">
+                                    Start your Free Trial →
+                                </a> -->
+                                <a href="request-demo.html" class="btn btn-white-gradient">
+  🚀 Start your Free Trial →
+</a>
+
+                            </div>
+                              <!-- <ul class="features-list">
+                                <li>✅ <strong>No More Waiting</strong> – Say goodbye to delays from DevOps or infra teams</li>
+                                <li>⚙️ <strong>Fully Automated CI/CD</strong> – Build, deploy, and scale without writing a single script</li>
+                                <li>☁️ <strong>Instant App Environment</strong> – Provision environments in any cloud with just a few clicks</li>
+                                <li>📈 <strong>Boost Productivity</strong> – 5x faster releases, 10x lower delivery costs</li>
+                              </ul> -->
+                            <!-- <div class="hero-subscribe-form-wrap pt-1 position-relative m-auto m-xl-0 d-none d-md-block d-lg-block d-xl-block"> -->
                                 <!-- <form id="subscribe-form" name="email-form" class="hero-subscribe-form d-block d-lg-flex d-md-flex">
                                     <input type="email" class="form-control me-2" name="Email" data-name="Email" placeholder="Enter Your Email Address" id="email-address" required="">
                                     <input type="submit" value="Subscribe" data-wait="Please wait..." class="btn btn-primary mt-3 mt-lg-0 mt-md-0">
@@ -953,15 +987,19 @@
                                                   class="far fa-check-circle text-primary me-2"></i>No credit card required</span>
                                     </li> -->
                                 <!-- </ul> -->
-                                <button 
+                                <!-- <button 
                                 name="getdevozyfree" 
                                 type="button" 
                                 class="btn btn-primary custom-btn" 
                                 onclick="window.location.href='devozy.ai/qliktalend_devops.html';"
                             >
                                 Qlik Talend Devops
-                            </button>           
-                                <div class="book-call">
+                            </button>            -->
+                            <!-- <p>
+                                Free 1 Application Environment Setup – in AWS, Azure, or GCP <br/>
+No DevOps. No Scripts. Just Click & Deploy.
+                            </p> -->
+                                <!-- <div class="book-call">
                                     <div class="avatars">
                                         <img src="avatar1.jpg" alt="Team member 1">
                                         <img src="avatar2.jpg" alt="Team member 2">
@@ -969,42 +1007,37 @@
                                         <img src="avatar4.jpg" alt="Team member 1">
                                     </div>
                                     <a href="request-demo.html" class="call-link">
-                                        Book a demo →
+                                        Start your Free Trial →
                                     </a>
-                                </div>
-                            </div>
+                                </div> -->
+                            <!-- </div> -->
                         </div>
                     </div>
-                    <div class="col-xl-6 col-lg-6 mt-4 mt-xl-0">
-                        <div class="hero-img-wrap position-relative" data-aos="fade-left">
-                            <!--animated shape start-->
-                            <ul class="position-absolute animate-element parallax-element shape-service hide-medium">
-                                <li class="layer" data-depth="0.03">
-                                    <img src="assets/img/color-shape/image-1.svg" alt="shape" class="img-fluid position-absolute color-shape-1">
-                                </li>
-                                <li class="layer" data-depth="0.02">
-                                    <img src="assets/img/color-shape/feature-2.svg" alt="shape" class="img-fluid position-absolute color-shape-2 z-5">
-                                </li>
-                                <li class="layer" data-depth="0.03">
-                                    <img src="assets/img/color-shape/feature-3.svg" alt="shape" class="img-fluid position-absolute color-shape-3">
-                                </li>
-                            </ul>
-                            <!--animated shape end-->
-                            <div class="hero-img-wrap position-relative">
-                                <div class="hero-screen-wrap">
-                                    <div class="phone-screen">
-                                        <img src="heropage-illustration2.png" alt="hero image" class="position-relative img-fluid">
-                                    </div>
-                                    <div class="mac-screen">
-                                        <img src="hero-browser-illustration.png" alt="hero image" class="position-relative img-fluid">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="col-xl-5 col-lg-5 mt-4 mt-xl-0">
+                        <!-- <div class="hero-img-wrap position-relative" data-aos="fade-left"> -->
+                            <div class="animated-features">
+                                <div class="animated-feature-wrapper">
+                                    <div class="animated-feature delay-1">✅ Cloud agnostic - AWS, azure, gcp, talend</div>
+                                    <div class="animated-feature delay-2">✅ CI tools supported - jenkins, sonarqube, synk, nexus</div>
+                                    <div class="animated-feature delay-3">✅ Team-Ready from Day One – Onboard with zero setup</div>
+                                    <div class="animated-feature delay-4">✅ Application scaling - up and down instances instantly</div>
+                                  </div>                                  
+                              </div>
+                              
+                        <!-- </div> -->
                     </div>
+                    
                 </div>
+                
             </div>
-        </section> <!--hero section end-->
+            <div class="custom-shape-divider-bottom">
+                <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
+                  <path d="M0,0 C300,100 900,0 1200,100 L1200,120 L0,120 Z" fill="#ffffff"></path>
+                </svg>
+              </div> 
+        </section>
+               
+         <!--hero section end-->
             <!-- Logo -->
             <section class="digtal-marketing-logo">
                 <div class="container">
@@ -1418,7 +1451,7 @@
                                Experience the ultimate all-in-one self-service platform for Agile project management, CI/CD pipelines, app provisioning, and multi-cloud infrastructure management. Track production incidents, streamline IT operations, and empower engineering teams with our connected suite. Simplify complexity and drive innovation effortlessly!
                            </p>    
                         </div>
-                        <a href="request-demo.html" class="link-with-icon text-decoration-none mt-3">Get Started <i
+                        <a href="request-demo.html" class="link-with-icon text-decoration-none mt-3">Get Started<i
                               class="fas fa-arrow-right"></i></a>
                     </div>
                     <div class="feature-card  bg-custom-light promo-border-hover border border-2 border-light text-white shadow-sm rounded-custom p-5" data-aos="fade-up" data-aos-delay="50">
@@ -2578,6 +2611,31 @@
 
         <!-- Hidden content end  -->
         <!-- Newsletter Start -->
+         <!-- Devozy.ai Free Trial Modal -->
+<div class="modal fade" id="devozyTrialModal" tabindex="-1" aria-labelledby="devozyTrialModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="devozyTrialModalLabel">🚀 Try Devozy.ai for Free</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form id="trialForm">
+            <div class="mb-3">
+              <label for="trialName" class="form-label">Full Name</label>
+              <input type="text"  id="name" class="form-control" id="trialName" required>
+            </div>
+            <div class="mb-3">
+              <label for="trialEmail"  class="form-label">Work Email</label>
+              <input type="email" id="email" class="form-control" id="trialEmail" required>
+            </div>
+            <button onclick="go(event)" type="submit" class="btn btn-primary w-100">Submit Request</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  
         <section class="digi-news-letter ah-bg ">
             <div class="container">
                 <div class="bg-white text-light rounded-custom p-4 p-md-5 p-lg-5">
@@ -2978,7 +3036,7 @@
                                             <li><a href="#premium_devozy_feature"
                                                     class="text-decoration-none">Features</a></li>
                                             <li><a href="#devozy" class="text-decoration-none">Devozy</a></li>
-                                            <li><a href="#Pricing" class="text-decoration-none">Pricing</a></li>
+                                            <li><a href="#Pricing" class="text-decoration-none">Plan</a></li>
                                             <li><a href="#review" class="text-decoration-none">Testimonial</a>
                                             </li>
                                             <li><a href="request-demo.html" class="text-decoration-none">Get free
@@ -3083,6 +3141,88 @@
     <!-- End Google Tag Manager (noscript) -->
 
     <!--endbuild-->
+    <script>
+        async function go(event) {
+          event.preventDefault();
+          const name = document.getElementById("name").value.trim();
+          const email = document.getElementById("email").value.trim();
+      function isEmail(input) {
+  const emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+  return emailRegex.test(input);
+}
+          function isValidName(input) {
+            return input.length >= 3;
+          }
+      
+          const valmail = isEmail(email);
+          const valname = isValidName(name);
+      
+          if (!valmail) {
+            alert("Please enter a valid email.");
+            return;
+          }
+      
+          if (!valname) {
+            alert("Please enter a valid full name.");
+            return;
+          }
+      
+          const postdata = {
+            ProductsInterested: [
+              {
+                ProductId: 11006,
+                ProductName: "ALL_IN_ONE"
+              }
+            ],
+            Firstname: name,
+            Lastname: "",
+            CompanyDetails: {
+              CompanyName: "",
+              website: ""
+            },
+            OfficialData: {
+              Designation: "",
+              OffEmail: email,
+              Phone: ""
+            },
+            Country: "",
+            StateOrCounty: "",
+            Zipcode: "",
+            Remarks: "Quick popup trial form",
+            DateSubmitted: new Date().toISOString(),
+            IsEmailVerified: null,
+            IsCompanyVerified: null,
+            IsApproved: null,
+            ApprovalDate: null,
+            ApprovalDetails: null,
+            IsConvertedAsClient: null,
+            ClientDetails: null,
+            IsActive: "Y",
+            Status: "Submitted"
+          };
+      
+          try {
+            const response = await fetch("https://api.yozytech.com/api/v1/form/subscription_web_enquiry", {
+              method: "POST",
+              headers: {
+                "Content-Type": "application/json"
+              },
+              body: JSON.stringify(postdata)
+            });
+      
+            if (response.ok) {
+              window.location.href = "https://devozy.ai/thankyou.html";
+            } else if (response.status === 402) {
+              alert("Email already exists.");
+            } else {
+              alert("Something went wrong.");
+            }
+          } catch (error) {
+            console.error("An error occurred:", error);
+          }
+        }
+      </script>
+      
 </body>
 
 </html>

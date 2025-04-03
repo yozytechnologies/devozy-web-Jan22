@@ -347,7 +347,7 @@ ol li {
 
 .call-link {
   font-size: 18px;
-  color: #1a1a1a;
+  color: #fff;
   text-decoration: none;
   font-weight: 500;
 }
@@ -372,6 +372,81 @@ background-color: #171717;
 }
 
 
+.animated-feature-wrapper {
+  background: white;
+  padding: 30px 40px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  color: black;
+  font-size: 14px;
+  font-weight: 500;
+  overflow: hidden;
+  position: relative;
+  min-height: 240px; /* big enough to hold all lines */
+}
+
+.animated-feature {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: slideIn 12s infinite;
+  animation-fill-mode: forwards;
+  margin-bottom: 15px;
+  position: relative;
+}
+
+/* Individual animation delays */
+.delay-1 { animation-delay: 0s; }
+.delay-2 { animation-delay: 1s; }
+.delay-3 { animation-delay: 2s; }
+.delay-4 { animation-delay: 3s; }
+
+@keyframes slideIn {
+  0%, 15% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  20%, 80% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  90%, 100% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+}
 
 
+.custom-shape-divider-bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  z-index: 1;
+}
 
+.custom-shape-divider-bottom svg {
+  display: block;
+  width: 100%;
+  height: 60px;
+}
+
+.btn-white-gradient {
+  background-color: #ffffff;
+  color: #4F00FF; /* adjust to match your primary gradient color */
+  font-weight: 600;
+  padding: 12px 24px;
+  border-radius: 30px;
+  text-decoration: none;
+  display: inline-block;
+  transition: all 0.3s ease;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+.btn-white-gradient:hover {
+  background-color: #f4f4f4;
+  color: #ff3c6a; /* or #ff6a00 for orange tone */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
