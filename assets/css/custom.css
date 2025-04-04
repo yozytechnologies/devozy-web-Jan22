@@ -319,7 +319,6 @@ ol li {
   }
 }
 
-
 .book-call {
   display: flex;
   align-items: center;
@@ -400,6 +399,8 @@ background-color: #171717;
 .delay-2 { animation-delay: 1s; }
 .delay-3 { animation-delay: 2s; }
 .delay-4 { animation-delay: 3s; }
+.delay-5 { animation-delay: 4s; }
+
 
 @keyframes slideIn {
   0%, 15% {
@@ -447,6 +448,204 @@ background-color: #171717;
 
 .btn-white-gradient:hover {
   background-color: #f4f4f4;
-  color: #ff3c6a; /* or #ff6a00 for orange tone */
+  color: #F154FF; /* or #ff6a00 for orange tone */
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+
+.how-it-works-section {
+  padding: 40px 0;
+  background-color: #ffffff;
+  transition: all 0.5s ease;
+}
+
+.how-it-works-section .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.heading {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #1f2937; /* gray-900 */
+}
+
+.subheading {
+  margin-top: 1rem;
+  font-size: 1.125rem;
+  color: #6b7280; /* gray-600 */
+}
+
+.steps {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+@media (min-width: 768px) {
+  .steps {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.step-card {
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+  text-align: center;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.step-card:hover {
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.08);
+}
+
+.step-card .icon {
+  font-size: 2rem;
+  color: #2563eb; /* blue-600 */
+}
+
+.step-card h3 {
+  margin-top: 1rem;
+  font-size: 1.25rem;
+  color: #1f2937;
+  font-weight: 600;
+}
+
+.step-card p {
+  margin-top: 0.5rem;
+  font-size: 1rem;
+  color: #6b7280;
+}
+
+.cta-wrapper {
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.cta-button {
+  background-color: #4f46e5; /* secondary */
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #4338ca; /* hover effect */
+}
+.nowrap {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis; /* Optional: shows "..." if it overflows */
+}
+
+
+
+.features-section {
+  padding: 80px 20px;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.features-section .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center; /* ✅ Center aligns all inner content */
+}
+
+.features-header h2 {
+  font-size: 32px;
+  font-weight: 700;
+  color: #1f2937;
+  margin-bottom: 10px;
+}
+
+.features-header p {
+  font-size: 18px;
+  color: #6b7280;
+  margin-top: 10px;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  justify-items: center; /* ✅ Horizontally center grid items */
+  gap: 30px;
+  margin-top: 60px;
+}
+
+.feature-cards {
+  background: #ffffff;
+  padding: 30px 20px;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+  max-width: 300px;
+  text-align: center;
+}
+
+.feature-cards:hover {
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.1);
+}
+
+.feature-icon {
+  font-size: 32px;
+  color: #2563eb;
+  margin-bottom: 15px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.feature-cards h3 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #1f2937;
+  margin-bottom: 10px;
+}
+
+.feature-cards p {
+  font-size: 14px;
+  color: #6b7280;
+}
+
+.features-button {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.primary-btn {
+  background-color: #2563eb;
+  color: #ffffff;
+  padding: 14px 28px;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.primary-btn:hover {
+  background-color: #1d4ed8;
+}
+.feature-card .feature-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* logo */
+.digtal-marketing-logo {
+  margin-top: 12vh; /* Full screen height */
 }
