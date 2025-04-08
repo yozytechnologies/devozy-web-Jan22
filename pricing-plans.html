@@ -18,7 +18,9 @@
         })(window, document, "clarity", "script", "qkkwjv6yim");
     </script>
     <!-- End Microsoft Clarity Tag Manager -->
-     
+        <!--Google reCaptcha v2-->
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-GJ5SBGF06Q"></script>
     <!--required meta tags-->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -79,9 +81,9 @@
             <nav class="navbar navbar-expand-xl navbar-light sticky-header">
                 <div class="container d-flex align-items-center justify-content-lg-between position-relative">
                     <a href="../index.html" class="navbar-brand d-flex align-items-center mb-md-0 text-decoration-none">
-                        <img src="../assets/img/logos/DevozyLogo2.svg" width="113" height="36" alt="logo"
+                        <img src="../assets/img/logos/DevozyLogo2.svg" width="160" height="36" alt="logo"
                             class="img-fluid logo-white" />
-                        <img src="../assets/img/logos/DevozyLogo.svg" width="113" height="36" alt="logo"
+                        <img src="../assets/img/logos/DevozyLogo.svg"  width="160" height="36" alt="logo"
                             class="img-fluid logo-color" />
                     </a>
 
@@ -331,7 +333,7 @@
                                 data-bs-title="Dark"><i class="flaticon-moon-1 fs-lg"></i></div>
                         </a> <a href="https://web.devozy.ai/" target="_self"
                             class="btn btn-link text-decoration-none me-2">Login</a>
-                        <button onclick="window.location.href='../request-demo.html'" name="getdevozyfree" type="submit" class="btn btn-primary">Get Started
+                        <button onclick="window.location.href='../request-demo.html'" name="getdevozyfree" type="submit" class="btn btn-primary">Try Devozy.ai Now
                    </button>
                     </div>
                 </div>
@@ -580,7 +582,8 @@
 
                 <div class="action-btns mt-4 ps-3">
                     <!-- <a href="../login.html" class="btn btn-outline-primary me-2">Sign In</a> -->
-                    <a href="../request-demo.html" class="btn btn-primary">Get Started</a>
+                    <a href="javascript:void(0);" class="btn btn-primary"  data-bs-toggle="modal" 
+                    data-bs-target="#devozyTrialModal">Start your Free Subscription</a>
                 </div>
             </div>
         </div>
@@ -589,7 +592,7 @@
         <!--header section end-->
 
                <!--page header section start-->
-               <section class="page-header position-relative overflow-hidden ptb-120 bg-dark" style="background: url('assets/img/page-header-bg.svg')no-repeat bottom left">
+               <section class="page-header position-relative overflow-hidden ptb-120 bg-dark" style="background:linear-gradient(135deg, #4F00FF 0%, #C800FF 33%, #f6a368 66%, #ff809d 100%); ">
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-8 col-md-12">
@@ -608,7 +611,10 @@
             <div class="row justify-content-center">
                 <div class="col-lg-6 col-md-10">
                     <div class="section-heading text-center">
-                        <h2>Check Our Valuable Plans</h2>
+                        <h2>Simple, Transparent Plans</h2>
+                        <p class=" text-dark">
+                            🎁 Free 1 Application Environment Setup in –  <b>AWS, Azure, or GCP </b>
+                        </p>
                     </div>
                 </div>
             </div>
@@ -629,7 +635,7 @@
                                     <div
                                         class="position-relative single-pricing-wrap rounded-custom bg-white custom-shadow p-5 mb-4 mb-lg-0">
                                         <div class="pricing-header mb-32">
-                                            <h3 class="package-name text-primary d-block">Business Basic</h3>
+                                            <h3 class="package-name text-primary d-block">Free Plan (No Credit Card required)</h3>
                                             <!-- <h4 class="display-6 fw-semi-bold">$99<span>/month**</span></h4> -->
                                             <span>Get Started Quickly with Essential Features. Suitable for Startups</span>
 
@@ -638,7 +644,7 @@
                                             <ul class="pricing-feature-list list-unstyled ">
                                                 <li><i class="fas fa-circle fa-2xs text-primary me-2"></i> 1 Project
                                                     Environment </li>
-                                                <li><i class="fas fa-circle fa-2xs text-primary me-2"></i> 5 Users
+                                                <li><i class="fas fa-circle fa-2xs text-primary me-2"></i> 3 Users
                                                 </li>
                                                 <li><i class="fas fa-circle fa-2xs text-primary me-2"></i> 1 Cloud
                                                     Subscription</li>
@@ -652,8 +658,12 @@
                                                     Alerts</li>
                                             </ul>
                                         </div>
-                                        <a href="request-demo.html" class="btn btn-outline-primary mt-2">Get Started</a>
-
+                                        <!-- <a href="request-demo.html" class="btn btn-outline-primary mt-2">Start your Free Subscription</a> -->
+                                        <div class="action-btns mt-4 ps-3">
+                                            <!-- <a href="../login.html" class="btn btn-outline-primary me-2">Sign In</a> -->
+                                            <a href="javascript:void(0);" class="btn btn-outline-primary"  data-bs-toggle="modal" 
+                                            data-bs-target="#devozyTrialModal">Start your Free Subscription</a>
+                                        </div>
                                         <!--pattern start-->
                                         <div class="dot-shape-bg position-absolute z--1 left--40 bottom--40">
                                             <img src="assets/img/shape/dot-big-square.svg" alt="shape">
@@ -663,9 +673,9 @@
                                 </div>
                                 <div class="col-lg-4 col-md-6">
                                     <div
-                                        class="position-relative single-pricing-wrap rounded-custom bg-dark text-white p-5 mb-4 mb-lg-0">
+                                    class="single-pricing-wrap gradient-border-box rounded-custom bg-white custom-shadow p-5 mb-4 mb-lg-0">
                                         <div class="pricing-header mb-32">
-                                            <h3 class="package-name text-warning d-block">Business Standard</h3>
+                                            <h3 class="package-name text-primary d-block">Business Standard</h3>
                                             <span>The Perfect Balance of Features and Scalability.</span>
                                             <!-- <h4 class="display-6 fw-semi-bold">$299<span>/month**</span></h4> -->
                                         </div>
@@ -693,7 +703,13 @@
 
                                             </ul>
                                         </div>
-                                        <a href="request-demo.html" class="btn btn-primary mt-2">Contact Us</a>
+                                        <a 
+                                        href="request-demo.html" 
+                                        class="btn mt-2 text-white border-0" 
+                                        style="background: linear-gradient(90deg, #ff00b7, #8000ff); padding: 10px 24px; font-weight: 600; border-radius: 8px;">
+                                        Upgrade and get more features
+                                      </a>
+                                      
                                     </div>
                                 </div>
                                 <div class="col-lg-4 col-md-6">
@@ -740,8 +756,7 @@
                                                     App Instances</li>
                                             </ul>
                                         </div>
-                                        <a href="request-demo.html" class="btn btn-outline-primary mt-2">Contact
-                                            Us</a>
+                                        <a href="request-demo.html" class="btn btn-outline-primary mt-2">Power Up with Business Plus</a>
 
                                         <!--pattern start-->
                                         <div class="dot-shape-bg position-absolute z--1 right--40 top--40">
@@ -760,11 +775,11 @@
                             <div class="row align-items-center justify-content-center">
                                 <div class="col-lg-4 col-md-6 ">
                                     <div
-                                        class="position-relative single-pricing-wrap rounded-custom bg-dark text-white p-5 mb-4 mb-lg-0">
+                                        class="position-relative  gradient-border-box  single-pricing-wrap rounded-custom   p-5 mb-4 mb-lg-0">
                                         <div class="pricing-header mb-32">
-                                            <h3 class="package-name text-warning d-block">Enterprise</h3>
+                                            <h3 class="package-name  d-block" style="color: #FFA60C; font-weight: 700;">Enterprise</h3>
                                             <h4 class="display-6 fw-semi-bold"><a href="request-demo.html"
-                                                    class="btn text-white btn-outline-primary mt-2">Let's talk</a>
+                                                    class="btn  btn-outline-primary mt-2">Let's talk</a>
                                             </h4>
                                         </div>
                                         <div class="pricing-info mb-4">
@@ -805,17 +820,14 @@
                                                     Monitoring & Alerting</li>
                                                 <li><i class="fas fa-circle fa-2xs text-primary me-2"></i> Scaling
                                                     Application Instances</li>
-
-
                                             </ul>
                                         </div>
-                                        <a href="request-demo.html" class="btn btn-outline-primary mt-2">Contact
-                                            Us</a>
+                                        <a href="request-demo.html" class="btn btn-outline-primary">Speak with Our Team</a>
 
                                         <!--pattern start-->
-                                        <div class="dot-shape-bg position-absolute z--1 left--40 bottom--40">
+                                        <!-- <div class="dot-shape-bg position-absolute z--1 left--40 bottom--40">
                                             <img src="assets/img/shape/dot-big-square.svg" alt="shape">
-                                        </div>
+                                        </div> -->
                                         <!--pattern end-->
                                     </div>
                                 </div>
@@ -830,7 +842,34 @@
     </section>
     <!--pricing section end-->
         
-    
+           <!-- Devozy.ai Free Trial Modal -->
+<div class="modal fade" id="devozyTrialModal" tabindex="-1" aria-labelledby="devozyTrialModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="devozyTrialModalLabel">🚀 Try Devozy.ai for Free</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form id="trialForm">
+            <div class="mb-3">
+              <label for="trialName" class="form-label">Full Name</label>
+              <input type="text"  id="name" class="form-control" id="trialName" required>
+            </div>
+            <div class="mb-3">
+              <label for="trialEmail"  class="form-label">Work Email</label>
+              <input type="email" id="email" class="form-control" id="trialEmail" required>
+            </div>
+            <!-- added recaptcha-->
+            <div class="g-recaptcha" data-sitekey="6LfSD2MqAAAAALEqUAkqDns42LCDBYeiNSwt70jm"></div>
+            <div class="mb-3">
+            <button onclick="go(event)" type="submit" class="btn btn-primary w-100">Submit Request</button>
+            </div>            
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
                
 
     

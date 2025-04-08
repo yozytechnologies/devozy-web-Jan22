@@ -237,8 +237,16 @@
 /* box */
 
 .integration-section {
-  padding: 2rem;
+  padding: 3rem 2rem;
   background-color: #f9f9f9;
+}
+
+.integration-section .content {
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+  justify-content: flex-start; /* forces everything to align left */
+  flex-wrap: wrap;
 }
 
 .container {
@@ -275,14 +283,37 @@ h1 {
 }
 
 
-.setup-container {
+/* .setup-container { */
   /* background-color: white; */
   /* border-radius: 8px; */
   /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
+  /* padding: 1.5rem; */
+  /* text-align: left; */
+  /* max-width: 400px; */
+  /* margin-left: 200px; */
+/* } */
+
+.setup-container {
   padding: 1.5rem;
   text-align: left;
   max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
 }
+
+/* Responsive layout for tablets & mobile */
+@media (min-width: 768px) {
+  .setup-container {
+    margin-left: 0;
+  }
+}
+
+@media (min-width: 1024px) {
+  .setup-container {
+    margin-left: 200px;
+  }
+}
+
 
 .setup-container h2 {
   font-size: 1.3rem;
@@ -649,3 +680,78 @@ background-color: #171717;
 .digtal-marketing-logo {
   margin-top: 12vh; /* Full screen height */
 }
+
+.cta-subscribe {
+  /* background: linear-gradient(145deg, #0f2027, #203a43, #2c5364); */
+  background:linear-gradient(135deg, #4F00FF 0%, #C800FF 33%, #f6a368 66%, #ff809d 100%);
+  color: white;
+}
+
+
+.cta-subscribe .text-warning {
+  color: #6d28d9 !important; /* deep purple accent */
+}
+
+.cta-subscribe .btn-primary {
+  background-color: #6d28d9;
+  border-color: #6d28d9;
+}
+
+.cta-subscribe .btn-primary:hover {
+  background-color: #5b21b6;
+  border-color: #5b21b6;
+}
+
+.cta-subscribe .form-block-banner {
+  margin-top: 2rem;
+}
+
+.subscribe-feature-list span {
+  font-weight: 500;
+  color: #ffffff;
+}
+.subscribe-feature-list {
+  /* display: flex; */
+  flex-wrap: nowrap; 
+  justify-content: center;
+  /* gap: 2rem;  */
+  list-style: none;
+  /* padding: 0; */
+  margin: 0 auto;
+  flex-direction: row;
+  
+}
+
+.subscribe-feature-list li {
+  white-space: nowrap;
+}
+
+
+.gradient-border-box {
+  position: relative;
+  z-index: 1;
+  background: #fff;
+  border-radius: 16px;
+  padding: 2rem;
+  overflow: hidden;
+}
+
+.gradient-border-box::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 2px; /* Border thickness */
+  background: linear-gradient(135deg, #0084ff, #ff0ffb); /* Your gradient colors */
+  border-radius: 16px;
+  -webkit-mask: 
+    linear-gradient(#000000 0 0) content-box, 
+    linear-gradient(#ff3636 0 0);
+  -webkit-mask-composite: destination-out;
+  mask-composite: exclude;
+  pointer-events: none;
+  z-index: -1;
+}
+
