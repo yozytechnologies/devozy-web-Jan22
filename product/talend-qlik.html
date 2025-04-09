@@ -59,7 +59,8 @@
     <!--custom css start-->
     <link rel="stylesheet" href="../assets/css/custom.css">
     <!--custom css end-->
-
+       <!--Google reCaptcha v2-->
+       <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>
 
 <body>
@@ -590,23 +591,24 @@
         <!--header section end-->
 
                <!--page header section start-->
-               <section class="page-header position-relative overflow-hidden ptb-60 bg-dark" style="background: url('assets/img/page-header-bg.svg')no-repeat bottom left">
+               <section class="page-header position-relative overflow-hidden ptb-60 bg-dark" style="background:linear-gradient(135deg, #4F00FF 0%, #C800FF 33%, #f6a368 66%, #ff809d 100%)">
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-8 col-md-12">
-                            <h1 class="display-5 fw-bold">Qlik Talend</h1>
+                            <!-- <h1 class="display-5 fw-bold">Qlik Talend</h1>Automate Qlik Talend Deployments with Devozy.ai -->
+                            <h1 class="display-5 fw-bold">Automate Qlik Talend Deployments with Devozy.ai</h1>
                             <p class="lead"> 
                                 Devozy.ai (No Code) Platform automates CICD and publish your Standard jobs, Camel routs to Talend cloud or TAC instantly. Supports below use cases for Talend Customers:
                              </p>
-                             <ul>
-                                <li><strong>🚀 Accelerate Qlik Talend Build & Deployments from Day 1</strong></li> 
-                                <li><strong>🚀 Talend On-Prem → Talend Cloud Migration</strong></li> 
-                                <li><strong>🚀 Talend Version Upgrade (7.3 → 8.0)</strong></li> 
-                                <li><strong>🚀 QTC (Qlik Talend Cloud) Region Changes </strong></li> 
-                                <li><strong>🚀 Talend Jobs Vulnerability Scanning (Synk) in Pipeline</strong></li> 
-                                <li><strong>🚀 Talend Automated Unit / Regression testing in Pipeline</strong></li> 
-                                <li><strong>🚀 Talend Jobs Code Quality (SonarQube) Scanning in Pipeline</strong></li> 
-                            </ul>
+                             <ul style="list-style: none; padding-left: 0;">
+                                <li><strong>⚡ Accelerate Qlik Talend Build & Deployments from Day 1</strong></li> 
+                                <li><strong>☁️ Talend On-Prem → Talend Cloud Migration</strong></li> 
+                                <li><strong>🔄 Talend Version Upgrade (7.3 → 8.0)</strong></li> 
+                                <li><strong>🌍 QTC (Qlik Talend Cloud) Region Changes</strong></li> 
+                                <li><strong>🛡️ Talend Jobs Vulnerability Scanning (Snyk) in Pipeline</strong></li> 
+                                <li><strong>🧪 Talend Automated Unit / Regression Testing in Pipeline</strong></li> 
+                                <li><strong>📊 Talend Jobs Code Quality (SonarQube) Scanning in Pipeline</strong></li> 
+                            </ul>                            
                         </div>
                     </div>
                     <div class="bg-circle rounded-circle circle-shape-3 position-absolute bg-dark-light right-5"></div>
@@ -619,11 +621,44 @@
                     <div class="container">
                         <div class="row align-content-center justify-content-center">
                             <div class="col-lg-6 col-md-12">
-                                <div class="section-heading mb-5">
-                                    <h2>Tailored IDP for Qlik Talend</h2>
+                                <div style="font-size: 16px; line-height: 1.7; max-width: 720px; margin: auto;">
+                                    <h2><strong>Tailored IDP for Qlik Talend</strong></h2>
+                                    <p>
+                                      Devozy.ai’s no-code platform empowers Qlik Talend developers to deploy jobs instantly and publish to Talend Cloud/TAC from day one.
+                                      With seamless integration to Nexus, GitHub, and SonarQube, deployments happen in just a few clicks—no manual steps, no DevOps hassle.
+                                      This automation boosts productivity by up to 5x and cuts project costs by 10x.
+                                    </p>
+                                  
+                                    <hr style="margin: 1.5rem 0; border: 0; border-top: 1px solid #eee;" />
+                                  
+                                    <ul style="list-style: none; padding-left: 0;">
+                                      <li style="margin-bottom: 1rem;">
+                                        <strong>🚀 Faster Job Delivery:</strong> Modernize Qlik Talend deployments with faster cycles, reduced deployment time, and improved time-to-market.
+                                      </li>
+                                      <li style="margin-bottom: 1rem;">
+                                        <strong>🔒 Risk-Free Deployments:</strong> Deploy multiple times a day with high success rates, tracked continuously for improvement.
+                                      </li>
+                                      <li style="margin-bottom: 1rem;">
+                                        <strong>⚙ Zero DevOps Required:</strong> Save setup time and eliminate complexity—our platform handles configurations automatically.
+                                      </li>
+                                      <li style="margin-bottom: 1rem;">
+                                        <strong>♻ Automation & Reusability:</strong> Reduce manual effort with reusable workflows, improving efficiency and performance.
+                                      </li>
+                                      <li style="margin-bottom: 1rem;">
+                                        <strong>💡 Better Developer Experience:</strong> Gain visibility across infra and deployment flows. Collect feedback and optimize deployment speed.
+                                      </li>
+                                      <li style="margin-bottom: 1rem;">
+                                        <strong>✅ Reliable Operations:</strong> Our AI assistant ensures near-zero failures by monitoring CI/CD pipelines with real-time success metrics.
+                                      </li>
+                                    </ul>
+                                  </div>
+                                  
+                                <!-- <div class="section-heading mb-5"> -->
+                                    <!-- <h2>Tailored IDP for Qlik Talend</h2> -->
                                     <!-- <h5>Shifting the Focus to Developer-Centric IT Operations</h5> -->
-                                    <p>Devozy.ai self-service platform empowers Qlik Talend developers to deploy Talend code instantly and publish jobs to Talend Cloud/TAC from day one. Our platform seamlessly integrates with Nexus, GitHub, and SonarQube, enabling developers to execute deployments in just a few clicks via the Devozy.ai web console. This fully automated process eliminates manual steps, boosting developer productivity by up to 5x and reducing project costs by up to 10x.</p>
-                                </div>
+                                    <!-- <p>Devozy.ai self-service platform empowers Qlik Talend developers to deploy Talend code instantly and publish jobs to Talend Cloud/TAC from day one. Our platform seamlessly integrates with Nexus, GitHub, and SonarQube, enabling developers to execute deployments in just a few clicks via the Devozy.ai web console. This fully automated process eliminates manual steps, boosting developer productivity by up to 5x and reducing project costs by up to 10x.</p> -->
+                                     <!-- <p>Devozy.ai's no-code platform empowers Qlik Talend developers to deploy jobs instantly and publish to Talend Cloud/TAC from day one. With seamless integration to Nexus, GitHub, and SonarQube, deployments happen in just a few clicks—no manual steps, no DevOps hassle. This automation boosts productivity up to 5x and cuts project costs by 10x.</p> -->
+                                <!-- </div> -->
                                 <!--<ul>
                                     <li><strong>Automated Deployments:</strong> Simplifies workflows with pre-configured pipelines.</li>
                                     <li><strong>Error-Free Integration:</strong> Handles Qlik Talend Cloud processes efficiently.</li>
@@ -636,7 +671,9 @@
                                     <li><strong>Custom Automation Scripts:</strong> Tailored solutions for unique use cases.</li>
                                     <li><strong>Enhanced Collaboration:</strong> Streamlines communication between teams managing Talend workflows.</li>
                                   </ul>-->
-                                  <ul>
+
+
+                                  <!-- <ul>
                                     <ul>
                                         <li><strong>🚀 Accelerate Qlik Talend Jobs Delivery:</strong> Modernize your Qlik Talend job delivery process to boost ROI and drive business growth with faster, more efficient deployments. <strong>Track Deployment Time:</strong> Monitor deployment duration for faster cycles and optimized time-to-market.</li>
                                         <li><strong>🔒 Risk-Free Deployments:</strong> Deploy Talend job changes with confidence—enabling multiple daily deployments in an agile environment, from day one. <strong>Deployment Success Rate:</strong> Measure the percentage of successful deployments versus failed ones for continuous improvements.</li>
@@ -645,7 +682,23 @@
                                         <li><strong>💡 Enhanced Developer Experience:</strong> Boost productivity, collaboration, and visibility around Qlik Talend Infra & build deployment process. <strong>Developer Feedback on Deployment Speed:</strong> Gather insights from developers on deployment speed and improve user experience accordingly.</li>
                                         <li><strong>✅ Reliable Operations:</strong> Our AI assistant proactively monitors CI/CD jobs to ensure a near-zero failure rate. <strong>CI/CD Job Timing and Success Metrics:</strong> Track deployment cycle time, job duration, and frequency of failures to ensure consistent performance and reliability.</li>
                                     </ul>
+                                  </ul> -->
+                                  <!-- <ul style="list-style: none; line-height: 2;">
+                                    <li><strong>🚀 Faster Job Delivery:</strong> Modernize Qlik Talend deployments with faster cycles, reduced deployment time, and improved time-to-market.</li>
+                                    
+                                    <li><strong>🔒 Confident, Risk-Free Deployments:</strong> Deploy multiple times a day with high success rates, tracked continuously for improvement.</li>
+                                    
+                                    <li><strong>⚙ Zero DevOps Required:</strong> Save setup time and eliminate complexity—our platform handles configurations automatically.</li>
+                                    
+                                    <li><strong>♻ Automation & Reusability:</strong> Reduce manual effort with reusable workflows, improving efficiency and performance.</li>
+                                    
+                                    <li><strong>💡 Better Developer Experience:</strong> Gain visibility across infra and deployment flows. Collect feedback and optimize deployment speed.</li>
+                                    
+                                    <li><strong>✅ Reliable Operations:</strong> Our AI assistant ensures near-zero failures by monitoring CI/CD pipelines with real-time success metrics.</li>
                                   </ul>
+                                   -->
+
+
                                 <!-- <div class="single-feature d-flex mb-4">
                                     <span class="fas fa-bezier-curve fa-2x text-primary"></span>
                                     <div class="ms-4 mt-2">
@@ -669,14 +722,50 @@
                                         <!-- <img src="../assets/img/integations/shape.svg" alt="integations"> -->
                                     </div>
                                     <img src="../talendqlik-illustration.png" class="img-fluid  rounded-custom shadow-lg" alt="softtent">
+                                    <div class="d-flex flex-column align-items-center text-center mt-2">
+                                        <p style="font-size: 15px;">
+                                            🎁 Free 1 Application Environment Setup in – <b>AWS, Azure, or GCP</b><br/>
+                                            No DevOps. No Scripts. Just Click & Deploy.
+                                        </p>
+                                        <div class="book-call mt-4">
+                                            <button onclick="window.location.href='javascript:void(0);'" data-bs-toggle="modal" data-bs-target="#devozyTrialModal"   class="btn btn-outline-primary">
+                                                🚀 Start your Free Subscription 
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="modal fade" id="devozyTrialModal" tabindex="-1" aria-labelledby="devozyTrialModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog modal-dialog-centered">
+                                          <div class="modal-content">
+                                            <div class="modal-header">
+                                              <h5 class="modal-title" id="devozyTrialModalLabel">🚀 Try Devozy.ai for Free</h5>
+                                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                              <form id="trialForm">
+                                                <div class="mb-3">
+                                                  <label for="trialName" class="form-label">Full Name</label>
+                                                  <input type="text"  id="name" class="form-control" id="trialName" required>
+                                                </div>
+                                                <div class="mb-3">
+                                                  <label for="trialEmail"  class="form-label">Work Email</label>
+                                                  <input type="email" id="email" class="form-control" id="trialEmail" required>
+                                                </div>
+                                                <!-- added recaptcha-->
+                                                <div class="g-recaptcha" data-sitekey="6LfSD2MqAAAAALEqUAkqDns42LCDBYeiNSwt70jm"></div>
+                                                <div class="mb-3">
+                                                <button onclick="go(event)" type="submit" class="btn btn-primary w-100">Submit Request</button>
+                                                </div>            
+                                              </form>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </section>
                 <!--feature section end-->
-
-    
          <!--footer section start-->
          <footer class="footer-section">
             <!--footer top start-->
@@ -811,6 +900,8 @@
     <script src="../assets/js/vendors/aos.js"></script>
     <script src="../assets/js/vendors/massonry.min.js"></script>
     <script src="../assets/js/app.js"></script>
+    <script src="../assets/js/form-handler.js"></script>
+
     <!--endbuild-->
 </body>
 

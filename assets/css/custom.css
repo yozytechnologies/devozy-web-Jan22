@@ -474,13 +474,15 @@ background-color: #171717;
   text-decoration: none;
   display: inline-block;
   transition: all 0.3s ease;
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  /* box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1); */
+  border: 1px solid gray;
 }
 
 .btn-white-gradient:hover {
   background-color: #f4f4f4;
   color: #F154FF; /* or #ff6a00 for orange tone */
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 4px 10px rgba(110, 110, 110, 0.15);
+  border: 1px solid grey;
 }
 
 
