@@ -859,9 +859,9 @@ background-color: #171717;
   white-space: nowrap;
 }
 
-.workflow-step.orange { background-color: #fbbf24; }
-.workflow-step.red { background-color: #f87171; }
-.workflow-step.gray { background-color: #cbd5e1; }
+.workflow-step.orange { background-color: #f9e457; }
+.workflow-step.red { background-color: #f7a9a9; }
+.workflow-step.gray { background-color: #c8ddf7; }
 
 .workflow-arrow {
   font-size: 1rem;
@@ -965,66 +965,42 @@ background-color: #171717;
 
 
 .comparison-wrapper {
-  margin-bottom: 3rem;
+  margin: 2rem 0;
 }
 
 .comparison-wrapper table {
   width: 100%;
   border-collapse: collapse;
-  font-size: 0.875rem;
-  margin-top: 1rem;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+  font-size: 1rem;
+  text-align: center;
+  background: white;
+  border: 1px solid #e0e0e0;
 }
 
 .comparison-wrapper th,
 .comparison-wrapper td {
-  padding: 0.75rem;
-  text-align: center;
-  border: 1px solid #e5e7eb;
+  padding: 12px 16px;
+  border: 1px solid #e0e0e0;
 }
 
-.comparison-wrapper th {
-  background-color: #f3f4f6;
+.comparison-wrapper thead {
+  background-color: #f5f7fa;
   font-weight: 600;
-  font-size: 0.75rem;
-  text-transform: uppercase;
-  color: #374151;
 }
 
-.comparison-wrapper td {
-  font-size: 0.85rem;
-  color: #1f2937;
-}
-
-/* Mobile responsiveness */
 @media (max-width: 768px) {
-  .comparison-wrapper table,
-  .comparison-wrapper thead,
-  .comparison-wrapper tbody,
+  .comparison-wrapper {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .comparison-wrapper table {
+    min-width: 500px; /* ✅ Prevent table from shrinking too much */
+    font-size: 0.85rem; /* ✅ Smaller text on mobile */
+  }
+
   .comparison-wrapper th,
-  .comparison-wrapper td,
-  .comparison-wrapper tr {
-    display: block;
-  }
-
-  .comparison-wrapper thead tr {
-    display: none;
-  }
-
   .comparison-wrapper td {
-    text-align: right;
-    padding-left: 50%;
-    position: relative;
-  }
-
-  .comparison-wrapper td::before {
-    content: attr(data-label);
-    position: absolute;
-    left: 1rem;
-    top: 50%;
-    transform: translateY(-50%);
-    font-weight: bold;
-    text-align: left;
-    white-space: nowrap;
+    padding: 8px 10px; /* ✅ Compact padding */
   }
 }
