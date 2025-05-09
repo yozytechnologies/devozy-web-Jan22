@@ -1014,3 +1014,117 @@ background-color: #171717;
 
 
 
+.custom-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.list-item {
+  /* display: inline-block; */
+  /* text-decoration: underline; */
+  font-weight: bold;
+  color: #ffffff;
+  margin: 8px 0;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.list-item:hover {
+  color: #fed831; /* Hover color */
+}
+
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  /* background: linear-gradient(to bottom right, #fdfbfb, #ebedee); */
+  color: #333;
+}
+
+.devozy-case-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.devozy-case-title {
+  font-size: 2em;
+  color: #2d2d2d;
+  margin-bottom: 0.5em;
+}
+
+.devozy-case-subtitle {
+  font-size: 1.5em;
+  color: #2d2d2d;
+  margin-top: 1.5em;
+}
+
+.devozy-case-highlight {
+  background: #f0f9ff;
+  padding: 12px 18px;
+  border-left: 5px solid #1e90ff;
+  margin: 20px 0;
+}
+
+.devozy-case-impact-list li {
+  margin-bottom: 10px;
+}
+
+.devozy-case-image {
+  margin: 30px 0;
+  text-align: center;
+}
+
+.devozy-case-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.devozy-case-button {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 24px;
+  background-color: #6c63ff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.devozy-case-button:hover {
+  background-color: #574fe4;
+}
+
+
+.devozy-cost-highlight {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #ffffff;
+  margin-top: 10px;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 10px 18px;
+  border-radius: 8px;
+  display: inline-block;
+  max-width: 600px;
+}
+
+.devozy-cost-number {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #fff;
+  animation: popHighlight 2s ease-in-out infinite;
+}
+
+@keyframes popHighlight {
+  0%, 100% {
+    color: #ff22cc;
+    transform: scale(1);
+  }
+  50% {
+    color: #6c3bff;
+    transform: scale(1.12);
+  }
+}
