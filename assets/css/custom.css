@@ -1034,6 +1034,12 @@ background-color: #171717;
 }
 
 
+/* Solutions dropdown scroll when content overflows viewport */
+.nav-item.dropdown .dropdown-menu {
+  max-height: 80vh;
+  overflow-y: auto;
+}
+
 body {
   margin: 0;
   padding: 0;
