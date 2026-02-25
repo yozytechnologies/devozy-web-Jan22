@@ -56,8 +56,8 @@
       })(window, document, "clarity", "script", "qkkwjv6yim");
     </script>
   
-    <!-- Optional: Google reCAPTCHA -->
-    <!-- <script src="https://www.google.com/recaptcha/api.js" async defer></script> -->
+    <!-- Google reCAPTCHA v2 -->
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
   </head>
   
 
@@ -951,19 +951,24 @@
                           <label for="trialEmail"  class="form-label">Work Email</label>
                           <input type="email" id="email" class="form-control" id="trialEmail" required>
                         </div>
-                        <!-- added recaptcha-->
-                        <div class="g-recaptcha" data-sitekey="6LfSD2MqAAAAALEqUAkqDns42LCDBYeiNSwt70jm"></div>
+                        <!-- Honeypot field - hidden from humans, bots will fill it -->
+                        <div style="position:absolute;left:-9999px;top:-9999px;opacity:0;height:0;width:0;overflow:hidden;" aria-hidden="true" tabindex="-1">
+                            <label for="website_url">Website URL</label>
+                            <input type="text" id="website_url" name="website_url" autocomplete="off" tabindex="-1">
+                        </div>
+                        <!-- invisible recaptcha -->
+                        <div id="recaptcha-pricing" class="g-recaptcha" data-sitekey="6LfSD2MqAAAAALEqUAkqDns42LCDBYeiNSwt70jm" data-size="invisible" data-callback="onRecaptchaSuccess"></div>
                         <div class="mb-3">
-                        <button onclick="go(event)" type="submit" class="btn btn-primary w-100">Submit Request</button>
-                        </div>            
+                        <button onclick="handleSubmit(event)" type="submit" class="btn btn-primary w-100">Submit Request</button>
+                        </div>
                       </form>
                     </div>
                   </div>
                 </div>
               </div>
             <div class="mb-3">
-            <button onclick="go(event)" type="submit" class="btn btn-primary w-100">Submit Request</button>
-            </div>            
+            <button onclick="handleSubmit(event)" type="submit" class="btn btn-primary w-100">Submit Request</button>
+            </div>
           </form>
         </div>
       </div>
@@ -1191,6 +1196,7 @@
     <script src="../assets/js/vendors/aos.js"></script>
     <script src="../assets/js/vendors/massonry.min.js"></script>
     <script src="../assets/js/app.js"></script>
+    <script src="../assets/js/anti-bot.js"></script>
     <script src="../assets/js/form-handler.js"></script>
     <!--endbuild-->
 </body>

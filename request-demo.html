@@ -782,9 +782,15 @@
                                     </div>
 
                                     <!--<div class="g-recaptcha" data-sitekey="6LdGCJcpAAAAADM_if5CYA2oB7FgXYZIaVt8ig6k"></div>-->
-                                    <div class="g-recaptcha" data-sitekey="6LfSD2MqAAAAALEqUAkqDns42LCDBYeiNSwt70jm"></div>
+                                    <!-- Honeypot field - hidden from humans, bots will fill it -->
+                                    <div style="position:absolute;left:-9999px;top:-9999px;opacity:0;height:0;width:0;overflow:hidden;" aria-hidden="true" tabindex="-1">
+                                        <label for="company_url">Website URL</label>
+                                        <input type="text" id="company_url" name="company_url" autocomplete="off" tabindex="-1">
+                                    </div>
+
+                                    <div id="recaptcha-demo" class="g-recaptcha" data-sitekey="6LfSD2MqAAAAALEqUAkqDns42LCDBYeiNSwt70jm" data-size="invisible" data-callback="onRecaptchaSuccess"></div>
                                     <div class="col-12">
-                                        <button onclick="go(event)" type="submit"
+                                        <button onclick="handleSubmit(event)" type="submit"
                                             class="btn btn-primary mt-4 d-block w-100">Get Started
                                         </button>
                                     </div>
@@ -961,14 +967,37 @@ $(document).ready(function() {
         });
                                        
 
-        async function go(event) {
+        // Invisible reCAPTCHA: user clicks submit → reCAPTCHA runs → calls onRecaptchaSuccess → go()
+        function handleSubmit(event) {
             event.preventDefault();
+            if (typeof grecaptcha !== 'undefined') {
+                grecaptcha.execute();
+            } else {
+                go();
+            }
+        }
+        function onRecaptchaSuccess(token) {
+            go();
+        }
 
+        async function go() {
+            // Anti-bot validation
+            if (typeof DevozyAntiBot !== 'undefined') {
+                var botCheck = DevozyAntiBot.validate({
+                    honeypotId: 'company_url'
+                });
+                if (!botCheck.ok) {
+                    if (botCheck.reason === 'bot_honeypot' || botCheck.reason === 'bot_too_fast') {
+                        // Silently reject bots - fake success redirect
+                        window.location.href = "https://devozy.ai/thankyou.html";
+                        return;
+                    }
+                    alert(botCheck.message || "Please complete the verification.");
+                    return;
+                }
+            }
 
             // Perform form validation here
-            // Implement your validation logic for each field
-
-            // Example validation
             const name = document.getElementById("name").value;
             const email = document.getElementById("email").value;
             const country =  document.getElementById("countryCode").value;
@@ -1009,7 +1038,19 @@ $(document).ready(function() {
 
             if (!valmail) {
                 alert("please enter valid email");
-            } else if (!valname || !valphonenumber || !valcompanyname) {
+                return;
+            }
+
+            // Business email validation - block free/disposable/temp emails
+            if (typeof DevozyAntiBot !== 'undefined') {
+                var emailCheck = await DevozyAntiBot.validateBusinessEmail(email);
+                if (!emailCheck.ok) {
+                    alert(emailCheck.message);
+                    return;
+                }
+            }
+
+            if (!valname || !valphonenumber || !valcompanyname) {
                 alert("Invalid input. Please check all fields.");
             }
             else {
@@ -1062,6 +1103,7 @@ $(document).ready(function() {
 
 
                     if (response.ok) {
+                        if (typeof DevozyAntiBot !== 'undefined') DevozyAntiBot.recordSubmission();
                         window.location.href = "https://devozy.ai/thankyou.html";
                         form.reset();
                     } else if (response.status == 402) {
@@ -1096,6 +1138,7 @@ $(document).ready(function() {
     <script src="assets/js/vendors/aos.js"></script>
     <script src="assets/js/vendors/massonry.min.js"></script>
     <script src="assets/js/app.js"></script>
+    <script src="assets/js/anti-bot.js"></script>
     <script src="assets/js/whatsappmodal.js"></script>
     <!--endbuild-->
 </body>
