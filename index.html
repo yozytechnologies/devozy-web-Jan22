@@ -1667,14 +1667,6 @@ No DevOps. No Scripts. Just Click & Deploy.
     <!--endbuild-->
     <script src="assets/js/anti-bot.js"></script>
     <script>
-        // Reset anti-bot timer when trial modal opens
-        var trialModal = document.getElementById('devozyTrialModal');
-        if (trialModal) {
-            trialModal.addEventListener('shown.bs.modal', function () {
-                if (typeof DevozyAntiBot !== 'undefined') DevozyAntiBot.resetTimer();
-            });
-        }
-
         // Invisible reCAPTCHA: user clicks submit → reCAPTCHA runs → calls onRecaptchaSuccess → go()
         function handleSubmit(event) {
             event.preventDefault();
@@ -1695,7 +1687,7 @@ No DevOps. No Scripts. Just Click & Deploy.
                   honeypotId: 'website_url'
               });
               if (!botCheck.ok) {
-                  if (botCheck.reason === 'bot_honeypot' || botCheck.reason === 'bot_too_fast') {
+                  if (botCheck.reason === 'bot_honeypot') {
                       // Silently reject bots - fake success redirect
                       window.location.href = "https://devozy.ai/thankyou.html";
                       return;

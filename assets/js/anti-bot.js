@@ -1,14 +1,12 @@
 /**
  * Anti-bot protection utilities for Devozy forms.
- * Provides: honeypot validation, time-based checks, rate limiting,
+ * Provides: honeypot validation, rate limiting,
  * reCAPTCHA validation, business email enforcement.
  */
 (function () {
   "use strict";
 
-  var FORM_LOAD_KEY = "_dz_flt";
   var LAST_SUBMIT_KEY = "_dz_lst";
-  var MIN_FILL_TIME_MS = 3000; // 3 seconds minimum to fill a form
   var SUBMIT_COOLDOWN_MS = 30000; // 30 seconds between submissions
 
   // ── Free / personal email providers (blocked — business emails only) ──
@@ -66,9 +64,6 @@
     freeEmailMap[FREE_EMAIL_DOMAINS[i]] = true;
   }
 
-  // Record form load time
-  window[FORM_LOAD_KEY] = Date.now();
-
   window.DevozyAntiBot = {
     /**
      * Runs all anti-bot checks. Returns { ok: true } or { ok: false, reason: string }.
@@ -87,14 +82,7 @@
         }
       }
 
-      // 2. Time-based check - form filled too fast
-      var loadTime = window[FORM_LOAD_KEY] || 0;
-      var elapsed = Date.now() - loadTime;
-      if (loadTime > 0 && elapsed < MIN_FILL_TIME_MS) {
-        return { ok: false, reason: "bot_too_fast" };
-      }
-
-      // 3. Rate limiting - too many submissions
+      // 2. Rate limiting - too many submissions
       try {
         var lastSubmit = parseInt(localStorage.getItem(LAST_SUBMIT_KEY), 10);
         if (lastSubmit && Date.now() - lastSubmit < SUBMIT_COOLDOWN_MS) {
@@ -184,11 +172,5 @@
       }
     },
 
-    /**
-     * Reset the form load timer (e.g., when a modal opens).
-     */
-    resetTimer: function () {
-      window[FORM_LOAD_KEY] = Date.now();
-    },
   };
 })();

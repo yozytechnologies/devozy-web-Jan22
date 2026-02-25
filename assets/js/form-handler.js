@@ -18,7 +18,7 @@ async function go() {
             honeypotId: 'website_url'
         });
         if (!botCheck.ok) {
-            if (botCheck.reason === 'bot_honeypot' || botCheck.reason === 'bot_too_fast') {
+            if (botCheck.reason === 'bot_honeypot') {
                 // Silently reject bots - fake success redirect
                 window.location.href = "https://devozy.ai/thankyou.html";
                 return;
